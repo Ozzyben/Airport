@@ -9,7 +9,7 @@ public class Passenger {
     private String firstNames;
     private String flightCode;
     private Boolean checkedIn;
-    private List<Bag> baggage;
+    private Bag bag;
 
     public Passenger(String bookingReference, String lastName, String firstNames, String flightCode, Boolean checkedIn) throws InvalidDataException {
         if(invalidBookingReference(bookingReference)){
@@ -21,7 +21,6 @@ public class Passenger {
         this.firstNames = firstNames;
         this.flightCode = flightCode;
         this.checkedIn = checkedIn;
-        baggage = new ArrayList<>();
     }
 
     public Boolean invalidBookingReference(String ref){
@@ -58,26 +57,18 @@ public class Passenger {
     /*Creates new bag object
     * Adds new bag to list in passenger*/
     public void addBag(Bag b){
-        baggage.add(b);
+        bag = b;
     }
 
     /*Will sum the total weight of all the baggage this passenger has*/
     public double totalWeight(){
-    	double totalWeight=0.0;
-    	for (Bag num : baggage) {
-    		totalWeight += num.getWeight();
-       }
-        return totalWeight;
+    	return bag.getWeight();
     }
 
 
     /*Will sum up the total size of all the baggage this passenger has*/
     public double totalSize(){
-    	double totalSize=0.0;
-    	for (Bag num : baggage) {
-    		totalSize += num.getSize();
-       }
-        return totalSize;
+    	return bag.getSize();
     }
 
 

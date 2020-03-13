@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a654c44-2cca-4ffb-8e89-995f7be611f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI$Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI$Scene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Passenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkIn/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Passenger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +39,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.project" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -146,6 +142,7 @@
       <workItem from="1582753650832" duration="1425000" />
       <workItem from="1582804325183" duration="158000" />
       <workItem from="1584024235641" duration="874000" />
+      <workItem from="1584109702612" duration="1059000" />
     </task>
     <servers />
   </component>
