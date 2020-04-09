@@ -62,13 +62,22 @@ public class Passenger {
 
     /*Will sum the total weight of all the baggage this passenger has*/
     public double totalWeight(){
-    	return bag.getWeight();
+        if(bag != null) {
+            return bag.getWeight();
+        } else{
+            return 0;
+        }
     }
 
 
     /*Will sum up the total size of all the baggage this passenger has*/
     public double totalSize(){
-    	return bag.getSize();
+        if(bag != null){
+            return bag.getSize();
+        } else {
+            return 0;
+        }
+
     }
 
 
