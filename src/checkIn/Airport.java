@@ -7,7 +7,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 public class Airport {
 
     private volatile Queue<Passenger> waitingRoom;
-    private volatile HashMap<String, Flight> planes;
+    public volatile HashMap<String, Flight> planes;
     private volatile CheckInGUI GUI;
 
     private int feePerExtraBag = 25;    //fee for each bag after first
@@ -15,11 +15,15 @@ public class Airport {
     private int excessBagWeight = 20;   //weight a bag can be before excess fees apply
     private int excessFee = 50;         //the excess fee needed for over volume/weight
 
+    
+    CheckInDesk desk1;
+    CheckInDesk desk2;
+    
     public Airport() {
         waitingRoom = new LinkedList<>();
 
         planes = new HashMap<>();
-        GUI = new CheckInGUI();
+        GUI = new CheckInGUI(this);
     }
 
     /*Main, duh*/
@@ -41,8 +45,8 @@ public class Airport {
         System.out.println(waitingRoom.size());
 
         GUI.createAndShowGUI();                                                 //Generate gui
-        CheckInDesk desk1 = new CheckInDesk(waitingRoom, planes, GUI);
-        CheckInDesk desk2 = new CheckInDesk(waitingRoom,planes,GUI);
+        desk1 = new CheckInDesk(waitingRoom, planes, GUI);
+        desk2 = new CheckInDesk(waitingRoom,planes,GUI);
         desk1.start();
         desk2.start();
         try {
