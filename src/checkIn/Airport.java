@@ -44,11 +44,12 @@ public class Airport {
 
         System.out.println(waitingRoom.size());
 
-        GUI.createAndShowGUI();                                                 //Generate gui
+        
         desk1 = new CheckInDesk(waitingRoom, planes, GUI);
         desk2 = new CheckInDesk(waitingRoom,planes,GUI);
         desk1.start();
         desk2.start();
+        GUI.createAndShowGUI();                                                 //Generate gui
         try {
             desk1.join();
         } catch (InterruptedException e) {
