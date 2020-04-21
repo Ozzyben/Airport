@@ -53,9 +53,10 @@ public class CheckInGUI {
 			passengerList.setBounds(0, 0, passengerListWidth, PassengerListHeight);
 			
 			queue = airport.desk1.getQueue();
-			for(int i = 0; i<queue.size(); i++) {
+			Queue queue_hold = queue;
+			for(int i = 0; i<queue_hold.size(); i++) {
 				
-				Passenger hold = queue.remove();
+				Passenger hold = queue_hold.remove();
 				JTextArea thisPassenger = new JTextArea(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
 				
 				thisPassenger.setBounds(0, i/queue.size(), width, queue.size());
