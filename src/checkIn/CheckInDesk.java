@@ -10,11 +10,14 @@ public class CheckInDesk extends Thread {
     public Passenger currentPassenger;
     private HashMap<String, Flight> planes;
     private CheckInGUI GUI;
+    private static int deskCount = 0;
+    public int deskNumber = 0;
 
     public CheckInDesk (Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2){
         this.setQueue(queue);
         this.planes = planes;
         this.GUI = gUI2;
+        deskNumber = deskCount++;
     }
 /*    
     private void addPassanger(Passenger passenger){

@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-
+import java.util.Iterator;
 import java.util.List;
 import java.util.Queue;
 
@@ -23,6 +23,7 @@ public class CheckInGUI {
 		JTextArea passengerList = new JTextArea();
 		JTextArea Desks = new JTextArea();
 		JTextArea flights = new JTextArea();
+		JPanel desksHolder = new JPanel(); 
 		
 		Airport airport;
 		private Queue<Passenger> queue;
@@ -70,15 +71,13 @@ public class CheckInGUI {
 		
 		public void displayDesks(){
 			
-			int desksWidth = width;
-			int desksHeight = height/3;
-			Desks.setBounds(0, height/3, desksWidth, desksHeight);
+			Iterator<CheckInDesk> iterator = airport.desks.iterator();
+			int totalDesks = airport.desks.size();
+			while (iterator.hasNext()){
+				createDeskDisplay(iterator.next(), totalDesks);
+			}
 			
-			Desks.setText(airport.desk1.currentPassenger.getLastName()+" is dropping off 1 bag of "+
-			airport.desk1.currentPassenger.totalWeight()+". A baggage fee of "+"**FEE**"+" is due.");
-			
-			Desks.setVisible(true);
-			frame.add(Desks);
+			frame.add(desksHolder);
 		}
 
 
@@ -95,7 +94,18 @@ public class CheckInGUI {
 			frame.add(flights);
 		}
 		
-		
+		void createDeskDisplay(CheckInDesk desk, int totalDesks){
+			int desksWidth = width/totalDesks;
+			int desksHeight = height/3;
+			Desks.setName("Desk " + desk.deskNumber);
+			Desks.setBounds((desksWidth*totalDesks) - desksWidth, height/3, desksWidth, desksHeight);
+			
+			Desks.setText(desk.currentPassenger.getLastName()+" is dropping off 1 bag of "+
+			desk.currentPassenger.totalWeight()+". A baggage fee of "+"**FEE**"+" is due.");
+			
+			Desks.setVisible(true);
+			desksHolder.add(Desks);
+		}
 		
 		void updateQueue() {
 			
