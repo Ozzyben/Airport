@@ -41,7 +41,7 @@ public class Airport {
         generateTestData("FlightDataRand", "PassengerDataRand");
         readFlightData("FlightDataRand");
         readPassengerData("PassengerDataRand");
-
+        addBagToPassenger();
         System.out.println(waitingRoom.size());
 
         
@@ -52,6 +52,7 @@ public class Airport {
         GUI.createAndShowGUI();                                                 //Generate gui
         try {
             desk1.join();
+            desk1.currentThread().sleep(6000); //End simulation after 6 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -79,7 +80,7 @@ public class Airport {
                         Flight f = new Flight(data[0], data[1], data[2], Integer.parseInt(data[3]), Integer.parseInt(data[4]), Integer.parseInt(data[5])); //make new flight object using read data
                         planes.put(data[0], f);                             //put the flight in the map with flight code as ref
                     } catch (InvalidDataException e) {
-                        System.out.println("Could not create flight.\n" + e.getMessage());
+                        //System.out.println("Could not create flight.\n" + e.getMessage());
                         System.exit(0);
                     }
                 } else {
@@ -246,7 +247,7 @@ public class Airport {
             System.out.println("Report written to: " + flightDataName);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }	
 
         try {
             File write = new File(passengerDataName);                                            //file
@@ -268,5 +269,19 @@ public class Airport {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    private void addBagToPassenger()
+    {
+    	for(Passenger p : waitingRoom) 
+    	{
+    		Random random = new Random();
+        	int bag_x= 15 + random.nextInt(150-15); 
+        	int bag_y= 10 + random.nextInt(70-10);
+        	int bag_z= 10 + random.nextInt(50-10); 
+        	int weight = 1 + random.nextInt(100-1);
+    		double volume = (bag_x*bag_y*bag_z)/1000.0;
+        	Bag b = new Bag(volume, weight);
+        	p.addBag(b);
+    	}
     }
 }
