@@ -53,17 +53,17 @@ public class CheckInGUI {
 			int PassengerListHeight = height/3;
 			passengerList.setBounds(0, 0, passengerListWidth, PassengerListHeight);
 			
-			queue = airport.desk1.getQueue();
-			Queue queue_hold = queue;
-			for(int i = 0; i<queue_hold.size(); i++) {
-				
-				Passenger hold = queue_hold.remove();
-				JTextArea thisPassenger = new JTextArea(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
-				
-				thisPassenger.setBounds(0, i/queue.size(), width, queue.size());
+			Iterator<Passenger> it = airport.waitingRoom.iterator();    
+	        	int i = 0;
+	        	while(it.hasNext()) {
+	        		Passenger hold = it.next();
+	        		JTextArea thisPassenger = new JTextArea(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
+	        		thisPassenger.setBounds(0, i/airport.waitingRoom.size(), width, airport.waitingRoom.size());
 				thisPassenger.setVisible(true);
 				passengerList.add(thisPassenger);
-			}
+				i++;
+	       		}
+			
 			
 			passengerList.setVisible(true);
 			frame.add(passengerList);
