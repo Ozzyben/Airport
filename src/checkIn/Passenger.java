@@ -79,7 +79,7 @@ public class Passenger {
 
     }
     
-    /*public int fee()
+    /*//public int fee()
     {
     	int feePerExtraBag = 25;    //fee for each bag after first
         int excessBagSize = 121;      //size bag can be before excess fees apply

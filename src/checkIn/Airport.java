@@ -270,6 +270,7 @@ public class Airport {
             e.printStackTrace();
         }
     }
+    //Will add a bag to all Passenger in the waiting room with random values
     private void addBagToPassenger()
     {
     	for(Passenger p : waitingRoom) 
