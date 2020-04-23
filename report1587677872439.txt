@@ -1,0 +1,34 @@
+Report from completed session
+2020-04-23
+
+FLIGHT REPORT: Ed2505 to Edinburgh
+- Number of passengers checked in: 58 of 200
+- Total weight of baggage on flight: 973.0 of 5000
+- Total size of baggage on flight: 116.0 of 800
+- Total excess fees: 1250.0
+
+FLIGHT REPORT: Kr4665 to Krakow
+- Number of passengers checked in: 32 of 130
+- Total weight of baggage on flight: 510.0 of 3250
+- Total size of baggage on flight: 72.0 of 520
+- Total excess fees: 650.0
+
+FLIGHT REPORT: Fr7100 to Frankfurt
+- Number of passengers checked in: 38 of 140
+- Total weight of baggage on flight: 590.0 of 3500
+- Total size of baggage on flight: 78.0 of 560
+- Total excess fees: 625.0
+
+FLIGHT REPORT: Gl1169 to Glasgow
+- Number of passengers checked in: 21 of 100
+- Total weight of baggage on flight: 339.0 of 2500
+- Total size of baggage on flight: 42.0 of 400
+- Total excess fees: 325.0
+
+FLIGHT REPORT: Ne5825 to New York
+- Number of passengers checked in: 31 of 120
+- Total weight of baggage on flight: 518.0 of 3000
+- Total size of baggage on flight: 51.0 of 480
+- Total excess fees: 525.0
+
+Total passengers not checked in: 466

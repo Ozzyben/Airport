@@ -18,11 +18,11 @@ public class QueueManager extends Thread {
     public void run() {
         while (!waitingRoom.isEmpty()) {
             try {
-                Thread.sleep((long) (Math.random()*100));
+                Thread.sleep((long) (Math.random() * 100));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            Passenger p = waitingRoom.get((int) Math.floor(Math.random()*waitingRoom.size()));
+            Passenger p = waitingRoom.get((int) Math.floor(Math.random() * waitingRoom.size()));
             addBagToPassenger(p);
             queueing.add(p);
             log.updateLog("Passenger " + p.getName() + " joined queue");

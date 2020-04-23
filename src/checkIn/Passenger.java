@@ -13,7 +13,7 @@ public class Passenger {
     //private int fee;
 
     public Passenger(String bookingReference, String lastName, String firstNames, String flightCode, Boolean checkedIn) throws InvalidDataException {
-        if(invalidBookingReference(bookingReference)){
+        if (invalidBookingReference(bookingReference)) {
             throw new InvalidDataException("The booking reference: " + bookingReference + " is invalid.");
         } else {
             this.bookingReference = bookingReference;
@@ -22,11 +22,11 @@ public class Passenger {
         this.firstNames = firstNames;
         this.flightCode = flightCode;
         this.checkedIn = checkedIn;
-        bag = new Bag(0,0);
+        bag = new Bag(0, 0);
     }
 
-    public Boolean invalidBookingReference(String ref){
-        if(ref.length() == 12){
+    public Boolean invalidBookingReference(String ref) {
+        if (ref.length() == 12) {
             return !Character.isLetter(ref.charAt(0)) ||
                     !Character.isLetter(ref.charAt(1)) ||
                     !Character.isDigit(ref.charAt(2)) ||
@@ -45,11 +45,11 @@ public class Passenger {
 
 
     /*Changes check in status to true
-    * Throws error if already checked in
-    * Use custom exception*/
-    public void CheckIn() throws CheckInException{
-        if(checkedIn==false) {
-        	checkedIn=true;
+     * Throws error if already checked in
+     * Use custom exception*/
+    public void CheckIn() throws CheckInException {
+        if (checkedIn == false) {
+            checkedIn = true;
         } else {
             throw new CheckInException(this.bookingReference);
         }
@@ -57,22 +57,23 @@ public class Passenger {
 
 
     /*Creates new bag object
-    * Adds new bag to list in passenger*/
-    public void addBag(Bag b){
+     * Adds new bag to list in passenger*/
+    public void addBag(Bag b) {
         bag = b;
     }
 
     /*Will sum the total weight of all the baggage this passenger has*/
-    public double totalWeight(){
-        if(bag != null) {
+    public double totalWeight() {
+        if (bag != null) {
             return bag.getWeight();
-        } else{
+        } else {
             return 0;
         }
     }
+
     /*Will sum up the total size of all the baggage this passenger has*/
-    public double totalSize(){
-        if(bag != null){
+    public double totalSize() {
+        if (bag != null) {
             return bag.getSize();
         } else {
             return 0;
@@ -98,21 +99,21 @@ public class Passenger {
         return fee;
     }*/
 
-    public double bagCost(){
+    public double bagCost() {
         double size = bag.getSize();
         double weight = bag.getWeight();
         double fee = 0;
 
-        if(size > 2){
+        if (size > 2) {
             fee += 25;
         }
-        if(weight > 20){
+        if (weight > 20) {
             fee += 25;
         }
         return fee;
     }
 
-    public String getName(){
+    public String getName() {
         return firstNames + " " + lastName;
     }
 
