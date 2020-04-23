@@ -53,25 +53,38 @@ public class CheckInGUI {
 			
 		}
 		
-		public synchronized void displayPassengers() {
-			
+		public void displayPassengers() {
+			passengerList.removeAll();
 			//size is just the same width as the frame and 1/3 of the height. this will change for iteration 2
 			int passengerListWidth = width;
 			int PassengerListHeight = height/3;
 			passengerList.setBounds(0, 0, passengerListWidth, PassengerListHeight);
+			
+			Queue<Passenger> q = airport.waitingRoom;
 			Iterator<Passenger> it = airport.waitingRoom.iterator();    
-	        	int i = 0;
-	        	while(i<5) {
+	        	
+	       	for(int i=0; i<5; i++) {
+	       		/*
+	       		Passenger hold = q.element();
+	       		JTextArea thisPassenger = new JTextArea();
+	       		thisPassenger.setText(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
+	       		thisPassenger.setBounds(0, i*PassengerListHeight/5, passengerListWidth, PassengerListHeight/5);
+	       		thisPassenger.setVisible(true);
+	       		passengerList.add(thisPassenger);
+	       		*/
+	       		if(it.hasNext()) {
 	        		Passenger hold = it.next();
-	        		JTextArea thisPassenger = new JTextArea();
-	        		thisPassenger.setText(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
-	        		thisPassenger.setBounds(0, i*PassengerListHeight/5, passengerListWidth, PassengerListHeight/5);
-	        		thisPassenger.setVisible(true);
-	        		passengerList.add(thisPassenger);
-	        		i++;
-	       		}
+		       		JTextArea thisPassenger = new JTextArea();
+		       		thisPassenger.setText(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
+		       		thisPassenger.setBounds(0, i*PassengerListHeight/5, passengerListWidth, PassengerListHeight/5);
+		       		thisPassenger.setVisible(true);
+		       		passengerList.add(thisPassenger);
+		       		
+	        	}
 	        
-			passengerList.setVisible(true);
+	       	}
+	        
+	        passengerList.setVisible(true);
 			frame.add(passengerList);
 			
 		}
