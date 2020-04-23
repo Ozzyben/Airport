@@ -23,7 +23,6 @@ public class CheckInGUI extends Thread {
     JFrame frame;
     Passenger currentPass;
     JTextArea passengerList = new JTextArea();
-    JTextArea Desks = new JTextArea();
     JTextArea flights = new JTextArea();
     JPanel desksHolder = new JPanel();
 
@@ -41,7 +40,7 @@ public class CheckInGUI extends Thread {
         //frame.setPreferredSize(new Dimension(width, height));
         frame.setVisible(true);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
+        
         //frame.invalidate();
         //frame.validate();
         frame.repaint();
@@ -95,8 +94,11 @@ public class CheckInGUI extends Thread {
         List<CheckInDesk> desks_holder = airport.desks;
         Iterator<CheckInDesk> iterator = desks_holder.iterator();
         int totalDesks = airport.desks.size();
+        int currentDesk = 1;
+        desksHolder.removeAll();
         while (iterator.hasNext()) {
-            createDeskDisplay(iterator.next(), totalDesks);
+            createDeskDisplay(iterator.next(), totalDesks, currentDesk);
+            currentDesk++;
         }
         desksHolder.setVisible(true);
         frame.add(desksHolder);
@@ -116,17 +118,18 @@ public class CheckInGUI extends Thread {
         frame.add(flights);
     }
 
-    void createDeskDisplay(CheckInDesk desk, int totalDesks) {
+    void createDeskDisplay(CheckInDesk desk, int totalDesks, int currentDesk) {
         int desksWidth = width / totalDesks;
         int desksHeight = height / 3;
-        Desks.setName("Desk " + desk.deskNumber);
-        Desks.setBounds((desksWidth * desk.deskNumber) - desksWidth, height / 3, desksWidth, desksHeight);
-        if (airport.desks.get(0).currentPassenger != null) {
-            Desks.setText(airport.desks.get(0).currentPassenger.getLastName() + " is dropping off 1 bag of " +
-                    airport.desks.get(0).currentPassenger.totalWeight() + ". \nA baggage fee of " + desk.currentPassenger.bagCost() + " is due.");
+        JTextArea deskText = new JTextArea();
+        deskText.setName("Desk " + currentDesk);
+        deskText.setBounds((desksWidth * currentDesk) - desksWidth, height / 3, desksWidth, desksHeight);
+        if (desk.currentPassenger != null) {
+        	deskText.setText(desk.currentPassenger.getLastName() + " is dropping off 1 bag of " +
+                    desk.currentPassenger.totalWeight() + ". \nA baggage fee of " + desk.currentPassenger.bagCost() + " is due.");
         }
-        Desks.setVisible(true);
-        desksHolder.add(Desks);
+        deskText.setVisible(true);
+        desksHolder.add(deskText);
     }
 
     public void update() {
