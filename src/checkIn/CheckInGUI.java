@@ -34,7 +34,8 @@ public class CheckInGUI {
 		public void createAndShowGUI() {
 			
 			frame = new JFrame();
-			frame.setPreferredSize(new Dimension(width, height));
+			frame.setSize(width, height);
+			//frame.setPreferredSize(new Dimension(width, height));
 			frame.setVisible(true);
 			
 			
@@ -44,6 +45,14 @@ public class CheckInGUI {
 			
 			
 			frame.repaint();
+			
+			//attempt to slow the run-time so you can see the GUI
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		public void displayPassengers() {
