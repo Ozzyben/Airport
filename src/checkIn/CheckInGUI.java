@@ -128,10 +128,12 @@ public class CheckInGUI {
 			int desksHeight = height/3;
 			Desks.setName("Desk " + desk.deskNumber);
 			Desks.setBounds((desksWidth*desk.deskNumber) - desksWidth, height/3, desksWidth, desksHeight);
+			if(airport.desks.get(0).currentPassenger!=null) {
+				Desks.setText(airport.desks.get(0).currentPassenger.getLastName()+" is dropping off 1 bag of "+
+						airport.desks.get(0).currentPassenger.totalWeight()+". \nA baggage fee of "+desk.currentPassenger.bagCost()+" is due.");
 
-			Desks.setText(airport.desks.get(0).currentPassenger.getLastName()+" is dropping off 1 bag of "+
-			airport.desks.get(0).currentPassenger.totalWeight()+". \nA baggage fee of "+desk.currentPassenger.bagCost()+" is due.");
-
+			}
+			
 			Desks.setVisible(true);
 			desksHolder.add(Desks);
 		}
