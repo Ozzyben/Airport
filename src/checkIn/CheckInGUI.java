@@ -62,6 +62,7 @@ public class CheckInGUI {
 			
 			Queue<Passenger> q = airport.queueing;
 			Iterator<Passenger> it = airport.queueing.iterator();
+
 	        	
 	       	for(int i=0; i<5; i++) {
 	       		/*

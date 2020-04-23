@@ -53,7 +53,7 @@ public class CheckInDesk extends Thread {
                 if(!queue.isEmpty()) {
                     checkInPassenger();
                 }
-                //GUI.update();
+                GUI.update();
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
