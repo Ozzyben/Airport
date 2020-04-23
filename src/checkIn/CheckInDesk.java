@@ -14,11 +14,11 @@ public class CheckInDesk extends Thread {
     private static int deskCount = 0;
     public int deskNumber = 0;
 
-    public CheckInDesk (String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI GUI){
+    public CheckInDesk (String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2){
         this.id = id;
         this.setQueue(queue);
         this.planes = planes;
-        this.GUI = GUI;
+        this.GUI = gUI2;
         deskNumber = deskCount++;
     }
 /*    
@@ -44,19 +44,19 @@ public class CheckInDesk extends Thread {
     }
 */
     public void run() {
-
-        while(!(queue.isEmpty())) {
-            System.out.println(id + " " + queue.size());
-            currentPassenger = queue.remove();
-            System.out.println(currentPassenger.getLastName());
+        while(!getQueue().isEmpty()) {
+            currentPassenger = getQueue().remove();
+            //System.out.println(currentPassenger.getFlightCode());
             String flightCode = currentPassenger.getFlightCode();
             planes.get(flightCode).addPassenger(currentPassenger);
             planes.get(flightCode).addFee(currentPassenger.bagCost());
+            GUI.update();
             try {
-                Thread.sleep(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         }
     }
 
