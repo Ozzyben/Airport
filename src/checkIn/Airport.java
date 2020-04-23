@@ -42,8 +42,8 @@ public class Airport {
         addBagToPassenger();
         System.out.println("Queue is " + waitingRoom.size() + " people long");
 
-        for(int i = 0; i < 2; i++){
-            String name = "Desk " + (i+1);
+        for(int i = 0; i < 1; i++){
+            String name = "desk" + i;
             newDesk(name);
         }
         //GUI.createAndShowGUI();                                                 //Generate gui

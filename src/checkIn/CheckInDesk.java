@@ -14,11 +14,11 @@ public class CheckInDesk extends Thread {
     private static int deskCount = 0;
     public int deskNumber = 0;
 
-    public CheckInDesk (String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI GUI){
+    public CheckInDesk (String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2){
         this.id = id;
         this.setQueue(queue);
         this.planes = planes;
-        this.GUI = GUI;
+        this.GUI = gUI2;
         deskNumber = deskCount++;
     }
 /*    
@@ -47,6 +47,7 @@ public class CheckInDesk extends Thread {
         while(!(queue.isEmpty())) {
             System.out.println(id + ": Remaining in queue " + queue.size());
             checkInPassenger();
+	    GUI.update();
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {

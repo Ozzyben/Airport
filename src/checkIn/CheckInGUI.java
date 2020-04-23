@@ -15,8 +15,8 @@ public class CheckInGUI {
 
 	// alterable width and height of the window. all components are scaled to width
 		// and height
-		int width = 400;
-		int height = 400;
+		int width = 500;
+		int height = 300;
 		
 		JFrame frame;
 		
@@ -37,21 +37,19 @@ public class CheckInGUI {
 			frame.setSize(width, height);
 			//frame.setPreferredSize(new Dimension(width, height));
 			frame.setVisible(true);
-			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+			
 			
 			displayPassengers();
 			displayFlights();
 			displayDesks();
-
+			
+			//frame.invalidate();
+			//frame.validate();
 			frame.repaint();
+			///frame.repaint();
 			
 			//attempt to slow the run-time so you can see the GUI
-//			try {
-//				Thread.sleep(10000);
-//			} catch (InterruptedException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+			
 		}
 		
 		public void displayPassengers() {
@@ -60,18 +58,18 @@ public class CheckInGUI {
 			int passengerListWidth = width;
 			int PassengerListHeight = height/3;
 			passengerList.setBounds(0, 0, passengerListWidth, PassengerListHeight);
-			Iterator<Passenger> it = airport.waitingRoom.iterator();
+			Iterator<Passenger> it = airport.waitingRoom.iterator();    
 	        	int i = 0;
-	        	while(it.hasNext()) {
+	        	while(i<5) {
 	        		Passenger hold = it.next();
-	        		JTextArea thisPassenger = new JTextArea(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
-	        		thisPassenger.setBounds(0, i/airport.waitingRoom.size(), width, airport.waitingRoom.size());
-				thisPassenger.setVisible(true);
-				passengerList.add(thisPassenger);
-				i++;
+	        		JTextArea thisPassenger = new JTextArea();
+	        		thisPassenger.setText(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
+	        		thisPassenger.setBounds(0, i*PassengerListHeight/5, passengerListWidth, PassengerListHeight/5);
+	        		thisPassenger.setVisible(true);
+	        		passengerList.add(thisPassenger);
+	        		i++;
 	       		}
-			
-			
+	        
 			passengerList.setVisible(true);
 			frame.add(passengerList);
 			
@@ -120,7 +118,14 @@ public class CheckInGUI {
 			desksHolder.add(Desks);
 		}
 		
-		void updateQueue() {
+		void update() {
+			
+			
+			displayPassengers();
+			displayFlights();
+			displayDesks();
+			
+			frame.repaint();
 			
 		}
 }
