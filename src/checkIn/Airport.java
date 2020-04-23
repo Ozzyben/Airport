@@ -50,6 +50,7 @@ public class Airport {
             newDesk(name);
         }
         GUI.createAndShowGUI();
+        GUI.start();
         try {
             timer.join();
         } catch (InterruptedException e) {
