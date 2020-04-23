@@ -83,9 +83,9 @@ public class Flight {
     	double flightSize = sumFlightSize();
         String report = "";
         report += "FLIGHT REPORT: " + flightCode + " to " + destination + "\n";
-        report += "- Number of passengers checked in: " + passengerList.size() + "\n";
-        report += "- Total weight of baggage on flight: " + flightWeight + "\n";
-        report += "- Total size of baggage on flight: " + flightSize + "\n";
+        report += "- Number of passengers checked in: " + passengerList.size() + " of " + maxPassenger + "\n";
+        report += "- Total weight of baggage on flight: " + flightWeight + " of " + maxWeight + "\n";
+        report += "- Total size of baggage on flight: " + flightSize + " of " + maxVolume + "\n";
         report += "- Total excess fees: " + excessFees + "\n";
         if (passengerList.size() > maxPassenger){
         	report += "FLIGHT IS OVER CAPACITY!" + "\n";

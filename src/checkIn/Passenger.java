@@ -103,10 +103,10 @@ public class Passenger {
         double weight = bag.getWeight();
         double fee = 0;
 
-        if(size > 100){
+        if(size > 2){
             fee += 25;
         }
-        if(weight > 100){
+        if(weight > 20){
             fee += 25;
         }
         return fee;

@@ -47,17 +47,24 @@ public class CheckInDesk extends Thread {
     }
 */
     public void run() {
-        while(!(queue.isEmpty())) {
-            System.out.println(id + ": Remaining in queue " + queue.size());
-            checkInPassenger();
-	        //GUI.update();
+        while(true) {
+            while (!(queue.isEmpty())) {
+                System.out.println(id + ": Remaining in queue " + queue.size());
+                checkInPassenger();
+                //GUI.update();
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            System.out.println(id + " closed.");
             try {
-                Thread.sleep(100);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        log.updateLog(id + " closed.");
     }
 
     public synchronized void checkInPassenger(){
@@ -65,8 +72,9 @@ public class CheckInDesk extends Thread {
         log.updateLog(id + ": Currently checking in " + currentPassenger.getName());
         String flightCode = currentPassenger.getFlightCode();
         planes.get(flightCode).addPassenger(currentPassenger);
-        planes.get(flightCode).addFee(currentPassenger.bagCost());;
-        log.updateLog(id + ": Finished checking in " + currentPassenger.getName());
+        double fee = currentPassenger.bagCost();
+        planes.get(flightCode).addFee(fee);
+        log.updateLog(id + ": Finished checking in " + currentPassenger.getName() + ", required £" + fee + " luggage fee");
     }
 
 	public Queue<Passenger> getQueue() {

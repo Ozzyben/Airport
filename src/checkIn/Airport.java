@@ -7,15 +7,11 @@ import java.util.concurrent.LinkedBlockingDeque;
 public class Airport {
 
     public volatile Queue<Passenger> waitingRoom;
+    public volatile Queue<Passenger> queueing;
     public volatile HashMap<String, Flight> planes;
     public volatile CheckInGUI GUI;
 
     public volatile Log log;
-
-    private int feePerExtraBag = 25;    //fee for each bag after first
-    private int excessBagSize = 3;      //size bag can be before excess fees apply
-    private int excessBagWeight = 20;   //weight a bag can be before excess fees apply
-    private int excessFee = 50;         //the excess fee needed for over volume/weight
 
     public List<CheckInDesk> desks;
     
@@ -255,13 +251,13 @@ public class Airport {
         String flightData = "";
         String passengerData = "";
 
-        for(int i = 0; i < 20; i++){
+        for(int i = 0; i < 5; i++){
             String destination = destinations[(int) Math.round(Math.random() * (destinations.length-1))];
             String airline = airlines[(int) Math.round(Math.random() * (airlines.length-1))];
             String flightCode = destination.substring(0,2) + (Math.round(Math.random() * 8999)+1000);
             int passengerNum = (int) ((Math.round(Math.random() * 15)+5)*10);
-            flightData += flightCode + ", " + destination + ", " + airline + ", " + passengerNum + ", " + ((Math.round(Math.random()*20))*50) + ", " + ((Math.round(Math.random()*20))*50) + "\n";
-            for(int j = 0; j < 20/*(passengerNum - ((int)Math.round(Math.random()*50)))*/; j++){
+            flightData += flightCode + ", " + destination + ", " + airline + ", " + passengerNum + ", " + (passengerNum * 25) + ", " + (passengerNum * 4) + "\n";
+            for(int j = 0; j < (passengerNum - ((int)Math.round(Math.random()*50))); j++){
                 String FName = firstName[(int) Math.round(Math.random() * (firstName.length-1))];
                 String LName = lastName[(int) Math.round(Math.random()* (lastName.length-1))];
                 String passengerCode = LName.substring(0,2) + (Math.round(Math.random()*89999999)+10000000) + FName.substring(0,2);
@@ -316,11 +312,8 @@ public class Airport {
     	for(Passenger p : waitingRoom) 
     	{
     		Random random = new Random();
-        	int bag_x= 15 + random.nextInt(150-15); 
-        	int bag_y= 10 + random.nextInt(70-10);
-        	int bag_z= 10 + random.nextInt(50-10); 
-        	int weight = 1 + random.nextInt(100-1);
-    		double volume = (bag_x*bag_y*bag_z)/1000.0;
+        	int weight = 1 + random.nextInt(30-1);
+    		double volume = (1 + random.nextInt(5000-1))/1000;
         	Bag b = new Bag(volume, weight);
         	p.addBag(b);
     	}
