@@ -146,6 +146,7 @@ public class CheckInGUI {
 			displayDesks();
 
 			//frame.revalidate();
+			//frame.revalidate();
 			frame.repaint();
 
 		}
