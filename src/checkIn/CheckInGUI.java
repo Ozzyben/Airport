@@ -60,8 +60,8 @@ public class CheckInGUI {
 			int PassengerListHeight = height/3;
 			passengerList.setBounds(0, 0, passengerListWidth, PassengerListHeight);
 			
-			Queue<Passenger> q = airport.waitingRoom;
-			Iterator<Passenger> it = airport.waitingRoom.iterator();    
+			//Queue<Passenger> q = airport.queueing;
+			Iterator<Passenger> it = airport.queueing.iterator();    
 	        	
 	       	for(int i=0; i<5; i++) {
 	       		/*
