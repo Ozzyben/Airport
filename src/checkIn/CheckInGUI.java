@@ -19,7 +19,7 @@ public class CheckInGUI {
 		int height = 400;
 
 		JFrame frame;
-
+		Passenger currentPass;
 		JTextArea passengerList = new JTextArea();
 		JTextArea Desks = new JTextArea();
 		JTextArea flights = new JTextArea();
@@ -63,7 +63,7 @@ public class CheckInGUI {
 			Queue<Passenger> q = airport.queueing;
 
 
-			Passenger[] itemsArray = new Passenger[q.size()];
+			Passenger[] itemsArray = new Passenger[q.size()+1];
 	        itemsArray = q.toArray(itemsArray);
 
 	       	for(int i=0; i<q.size(); i++) {
@@ -75,13 +75,16 @@ public class CheckInGUI {
 	       		thisPassenger.setVisible(true);
 	       		passengerList.add(thisPassenger);
 	       		*/
-
+	       			
 	        		Passenger hold = itemsArray[i];
-		       		JTextArea thisPassenger = new JTextArea();
-		       		thisPassenger.setText(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
-		       		thisPassenger.setBounds(0, i*PassengerListHeight/5, passengerListWidth, PassengerListHeight/5);
-		       		thisPassenger.setVisible(true);
-		       		passengerList.add(thisPassenger);
+	        		if(hold!=null) {
+	        			JTextArea thisPassenger = new JTextArea();
+			       		thisPassenger.setText(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
+			       		thisPassenger.setBounds(0, i*PassengerListHeight/5, passengerListWidth, PassengerListHeight/5);
+			       		thisPassenger.setVisible(true);
+			       		passengerList.add(thisPassenger);
+	        		}
+		       		
 
 
 
@@ -109,9 +112,12 @@ public class CheckInGUI {
 			int flightsWidth = width;
 			int flightsHeight = height/3;
 			flights.setBounds(0, 2*height/3, flightsWidth, flightsHeight);
-
-			Flight flightDisplayed = airport.planes.get(airport.desks.get(0).currentPassenger.getFlightCode());
-			flights.setText(flightDisplayed.flightCode + "  "+ flightDisplayed.destination);
+			if(airport.desks.get(0).currentPassenger!=null) {
+				Flight flightDisplayed = airport.planes.get(airport.desks.get(0).currentPassenger.getFlightCode());
+				flights.setText(flightDisplayed.flightCode + "  "+ flightDisplayed.destination);
+			}
+			
+			
 
 			flights.setVisible(true);
 			frame.add(flights);

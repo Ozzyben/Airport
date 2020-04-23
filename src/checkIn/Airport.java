@@ -49,7 +49,7 @@ public class Airport {
             String name = "Desk" + (i+1);
             newDesk(name);
         }
-        //GUI.createAndShowGUI();
+        GUI.createAndShowGUI();
         try {
             timer.join();
         } catch (InterruptedException e) {
