@@ -37,22 +37,21 @@ public class CheckInGUI {
 			frame.setSize(width, height);
 			//frame.setPreferredSize(new Dimension(width, height));
 			frame.setVisible(true);
-			
+			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			
 			displayPassengers();
 			displayFlights();
 			displayDesks();
-			
-			
+
 			frame.repaint();
 			
 			//attempt to slow the run-time so you can see the GUI
-			try {
-				Thread.sleep(10000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+//			try {
+//				Thread.sleep(10000);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 		}
 		
 		public void displayPassengers() {
@@ -61,7 +60,7 @@ public class CheckInGUI {
 			int passengerListWidth = width;
 			int PassengerListHeight = height/3;
 			passengerList.setBounds(0, 0, passengerListWidth, PassengerListHeight);
-			Iterator<Passenger> it = airport.waitingRoom.iterator();    
+			Iterator<Passenger> it = airport.waitingRoom.iterator();
 	        	int i = 0;
 	        	while(it.hasNext()) {
 	        		Passenger hold = it.next();
@@ -122,8 +121,6 @@ public class CheckInGUI {
 		}
 		
 		void updateQueue() {
-			
-			
 			
 		}
 }

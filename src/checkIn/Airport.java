@@ -43,11 +43,11 @@ public class Airport {
         System.out.println(waitingRoom.size());
 
         for(int i = 0; i < 2; i++){
-            String name = "desk" + i;
+            String name = "Desk " + (i+1);
             newDesk(name);
         }
 
-        //GUI.createAndShowGUI();                                                 //Generate gui
+        GUI.createAndShowGUI();                                                 //Generate gui
         try {
             desks.get(0).join();
         } catch (InterruptedException e) {

@@ -3,23 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2a654c44-2cca-4ffb-8e89-995f7be611f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightDataRand" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassengerDataRand" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Bag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/InvalidDataException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/InvalidDataException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/tests/BagTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/tests/BagTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/tests/FlightTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/tests/FlightTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/tests/PassengerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/tests/PassengerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report1586534764067.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report1586534795445.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report1586534801089.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Airport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Airport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInDesk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInDesk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Passenger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/checkIn/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Airport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/checkIn/CheckInDesk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/CheckInDesk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/checkIn/CheckInGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/CheckInGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checkIn/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checkIn/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Passenger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +149,7 @@
       <workItem from="1584024235641" duration="874000" />
       <workItem from="1584109702612" duration="2851000" />
       <workItem from="1586441015260" duration="10655000" />
-      <workItem from="1587493069214" duration="5865000" />
+      <workItem from="1587493069214" duration="8986000" />
     </task>
     <servers />
   </component>
@@ -199,22 +189,22 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="533" y="237" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1587493220444" />
-    <state width="1461" height="154" key="GridCell.Tab.0.bottom" timestamp="1587497289184">
+    <state width="1461" height="154" key="GridCell.Tab.0.bottom" timestamp="1587655560773">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1587497289184" />
-    <state width="1461" height="154" key="GridCell.Tab.0.center" timestamp="1587497289183">
+    <state width="1461" height="154" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1587655560773" />
+    <state width="1461" height="154" key="GridCell.Tab.0.center" timestamp="1587655560772">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1587497289183" />
-    <state width="1461" height="154" key="GridCell.Tab.0.left" timestamp="1587497289183">
+    <state width="1461" height="154" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1587655560772" />
+    <state width="1461" height="154" key="GridCell.Tab.0.left" timestamp="1587655560771">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1587497289183" />
-    <state width="1461" height="154" key="GridCell.Tab.0.right" timestamp="1587497289184">
+    <state width="1461" height="154" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1587655560771" />
+    <state width="1461" height="154" key="GridCell.Tab.0.right" timestamp="1587655560773">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1587497289184" />
+    <state width="1461" height="154" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1587655560773" />
     <state width="1461" height="317" key="GridCell.Tab.1.bottom" timestamp="1582556154470">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
