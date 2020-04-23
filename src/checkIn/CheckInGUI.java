@@ -37,6 +37,7 @@ public class CheckInGUI {
 			frame.setSize(width, height);
 			//frame.setPreferredSize(new Dimension(width, height));
 			frame.setVisible(true);
+			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			
 			
 			displayPassengers();

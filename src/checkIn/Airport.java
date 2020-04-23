@@ -42,11 +42,11 @@ public class Airport {
         addBagToPassenger();
         System.out.println("Queue is " + waitingRoom.size() + " people long");
 
-        for(int i = 0; i < 1; i++){
-            String name = "desk" + i;
+        for(int i = 0; i < 2; i++){
+            String name = "desk" + (i+1);
             newDesk(name);
         }
-        //GUI.createAndShowGUI();                                                 //Generate gui
+        GUI.createAndShowGUI();
         try {
             desks.get(0).join();
         } catch (InterruptedException e) {

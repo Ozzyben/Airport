@@ -47,9 +47,9 @@ public class CheckInDesk extends Thread {
         while(!(queue.isEmpty())) {
             System.out.println(id + ": Remaining in queue " + queue.size());
             checkInPassenger();
-	    GUI.update();
+	        GUI.update();
             try {
-                Thread.sleep(10);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
