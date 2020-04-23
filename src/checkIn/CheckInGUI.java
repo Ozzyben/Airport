@@ -53,7 +53,7 @@ public class CheckInGUI {
 			
 		}
 		
-		public void displayPassengers() {
+		public synchronized void displayPassengers() {
 			passengerList.removeAll();
 			//size is just the same width as the frame and 1/3 of the height. this will change for iteration 2
 			int passengerListWidth = width;
@@ -62,9 +62,11 @@ public class CheckInGUI {
 			
 			Queue<Passenger> q = airport.queueing;
 			
-			Iterator<Passenger> it = q.iterator();    
-	        	
-	       	for(int i=0; i<5; i++) {
+			    
+			Passenger[] itemsArray = new Passenger[q.size()];
+	        itemsArray = q.toArray(itemsArray);
+
+	       	for(int i=0; i<q.size(); i++) {
 	       		/*
 	       		Passenger hold = q.element();
 	       		JTextArea thisPassenger = new JTextArea();
@@ -73,15 +75,15 @@ public class CheckInGUI {
 	       		thisPassenger.setVisible(true);
 	       		passengerList.add(thisPassenger);
 	       		*/
-	       		if(it.hasNext()) {
-	        		Passenger hold = it.next();
+	       		
+	        		Passenger hold = itemsArray[i];
 		       		JTextArea thisPassenger = new JTextArea();
 		       		thisPassenger.setText(hold.getFlightCode()+"  "+hold.getLastName()+"  "+hold.totalWeight()+"  "+ hold.totalSize());
 		       		thisPassenger.setBounds(0, i*PassengerListHeight/5, passengerListWidth, PassengerListHeight/5);
 		       		thisPassenger.setVisible(true);
 		       		passengerList.add(thisPassenger);
 		       		
-	        	}
+	        	
 	        
 	       	}
 	        

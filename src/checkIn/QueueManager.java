@@ -16,7 +16,7 @@ public class QueueManager extends Thread{
     public void run(){
         while(!waitingRoom.isEmpty()){
             try {
-                Thread.sleep((long) (Math.random()*150));
+                Thread.sleep((long) (Math.random()*100));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
