@@ -1,0 +1,124 @@
+Report from completed session
+2020-04-10
+
+FLIGHT REPORT: Fr3636 to Frankfurt
+- Number of passengers checked in: 61
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Am8151 to Amsterdam
+- Number of passengers checked in: 95
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Os2393 to Oslo
+- Number of passengers checked in: 120
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Pa1799 to Paris
+- Number of passengers checked in: 146
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Be2494 to Berlin
+- Number of passengers checked in: 30
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Am6622 to Amsterdam
+- Number of passengers checked in: 44
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Be1615 to Berlin
+- Number of passengers checked in: 94
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Be9823 to Berlin
+- Number of passengers checked in: 105
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Os6509 to Oslo
+- Number of passengers checked in: 34
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Be6293 to Berlin
+- Number of passengers checked in: 54
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Kr2864 to Krakow
+- Number of passengers checked in: 119
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Gl9407 to Glasgow
+- Number of passengers checked in: 40
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Am2815 to Amsterdam
+- Number of passengers checked in: 118
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Os8129 to Oslo
+- Number of passengers checked in: 106
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: St9849 to Stockholm
+- Number of passengers checked in: 146
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: St4631 to Strasbourg
+- Number of passengers checked in: 139
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: St4289 to Stockholm
+- Number of passengers checked in: 112
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Kr7753 to Krakow
+- Number of passengers checked in: 33
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Pr1096 to Prague
+- Number of passengers checked in: 118
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Pa4791 to Paris
+- Number of passengers checked in: 30
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+Total passengers not checked in: 0

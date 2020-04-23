@@ -1,0 +1,124 @@
+Report from completed session
+2020-04-10
+
+FLIGHT REPORT: Am7199 to Amsterdam
+- Number of passengers checked in: 130
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: St6694 to Strasbourg
+- Number of passengers checked in: 68
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Am6077 to Amsterdam
+- Number of passengers checked in: 24
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Ed6698 to Edinburgh
+- Number of passengers checked in: 146
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Kr6590 to Krakow
+- Number of passengers checked in: 111
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Pr2712 to Prague
+- Number of passengers checked in: 67
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Be3916 to Berlin
+- Number of passengers checked in: 40
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Ed7460 to Edinburgh
+- Number of passengers checked in: 33
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Fr2050 to Frankfurt
+- Number of passengers checked in: 99
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Am8728 to Amsterdam
+- Number of passengers checked in: 75
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Ne4553 to New York
+- Number of passengers checked in: 99
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Ne4520 to New York
+- Number of passengers checked in: 48
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: St2555 to Strasbourg
+- Number of passengers checked in: 62
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Ne5249 to New York
+- Number of passengers checked in: 13
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Pa4177 to Paris
+- Number of passengers checked in: 118
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Ne2459 to New York
+- Number of passengers checked in: 95
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Be3060 to Berlin
+- Number of passengers checked in: 58
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: St1457 to Strasbourg
+- Number of passengers checked in: 127
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Kr3597 to Krakow
+- Number of passengers checked in: 77
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+FLIGHT REPORT: Os6730 to Oslo
+- Number of passengers checked in: 57
+- Total weight of baggage on flight: 0.0
+- Total size of baggage on flight: 0.0
+- Total excess fees: 0.0
+
+Total passengers not checked in: 0

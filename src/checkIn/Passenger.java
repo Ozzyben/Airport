@@ -9,7 +9,8 @@ public class Passenger {
     private String firstNames;
     private String flightCode;
     private Boolean checkedIn;
-    private List<Bag> baggage;
+    private Bag bag;
+    //private int fee;
 
     public Passenger(String bookingReference, String lastName, String firstNames, String flightCode, Boolean checkedIn) throws InvalidDataException {
         if(invalidBookingReference(bookingReference)){
@@ -21,7 +22,6 @@ public class Passenger {
         this.firstNames = firstNames;
         this.flightCode = flightCode;
         this.checkedIn = checkedIn;
-        baggage = new ArrayList<>();
     }
 
     public Boolean invalidBookingReference(String ref){
@@ -58,27 +58,44 @@ public class Passenger {
     /*Creates new bag object
     * Adds new bag to list in passenger*/
     public void addBag(Bag b){
-        baggage.add(b);
+        bag = b;
     }
 
     /*Will sum the total weight of all the baggage this passenger has*/
     public double totalWeight(){
-    	double totalWeight=0.0;
-    	for (Bag num : baggage) {
-    		totalWeight += num.getWeight();
-       }
-        return totalWeight;
+        if(bag != null) {
+            return bag.getWeight();
+        } else{
+            return 0;
+        }
     }
-
-
     /*Will sum up the total size of all the baggage this passenger has*/
     public double totalSize(){
-    	double totalSize=0.0;
-    	for (Bag num : baggage) {
-    		totalSize += num.getSize();
-       }
-        return totalSize;
+        if(bag != null){
+            return bag.getSize();
+        } else {
+            return 0;
+        }
+
     }
+    
+    /*//public int fee()
+    {
+    	int feePerExtraBag = 25;    //fee for each bag after first
+        int excessBagSize = 121;      //size bag can be before excess fees apply
+        int excessBagWeight = 32;   //weight a bag can be before excess fees apply
+        int excessFee = 50;         //the excess fee needed for over volume/weight
+    	int fee = 0;                                               //initalise fee counter
+        //generate fees
+                  
+        if (bag.getSize()> excessBagSize) {                                   //is bag excess volume
+            fee += excessFee;                                           //add fee
+        }
+        if (bag.getWeight() > excessBagWeight) {                              // is bag excess weight
+            fee += excessFee;                                           //add fee
+        }
+        return fee;
+    }*/
 
 
     //Auto generated getter and setters

@@ -6,19 +6,19 @@ import java.util.List;
 public class Flight {
 
 	// Unique code that differentiates each flight from another, allowing passengers to find the correct flight to check in to.
-    private String flightCode;
+    public String flightCode;
     // The destination of the flight
-    private String destination;
+    public String destination;
     // The carrier of the flight
-    private String carrier;
+    public String carrier;
     // max capacities of the flight, passenger, baggage weight and baggage volume
-    private int maxPassenger;
+    public int maxPassenger;
     private int maxWeight;
     private int maxVolume;
     // A list of all the passengers checked-in to the flight
-    private List<Passenger> passengerList;
+    public List<Passenger> passengerList;
     // The amount of excess fees associated with the flight, due to extra baggage weight/limit from passenger.
-    private double excessFees;
+    public double excessFees;
 
     public Flight(String flightCode, String destination, String carrier, int maxPassenger, int maxWeight, int maxVolume) throws InvalidDataException {
         if(invalidFlightCode(flightCode)){
