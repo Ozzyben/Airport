@@ -45,7 +45,7 @@ public class Airport {
             String name = "Desk" + (i+1);
             newDesk(name);
         }
-        //GUI.createAndShowGUI();
+        GUI.createAndShowGUI();
         try {
             desks.get(0).join();
         } catch (InterruptedException e) {
