@@ -82,13 +82,6 @@ public class CheckInGUI {
 			while (iterator.hasNext()){
 				createDeskDisplay(iterator.next(), totalDesks);
 			}
-			int desksWidth = width;
-			int desksHeight = height/3;
-			Desks.setBounds(0, height/3, desksWidth, desksHeight);
-			
-			Desks.setText(airport.desks.get(0).currentPassenger.getLastName()+" is dropping off 1 bag of "+
-			airport.desks.get(0).currentPassenger.totalWeight()+". A baggage fee of "+"**FEE**"+" is due.");
-			
 			frame.add(desksHolder);
 		}
 
@@ -112,8 +105,8 @@ public class CheckInGUI {
 			Desks.setName("Desk " + desk.deskNumber);
 			Desks.setBounds((desksWidth*totalDesks) - desksWidth, height/3, desksWidth, desksHeight);
 			
-			Desks.setText(desk.currentPassenger.getLastName()+" is dropping off 1 bag of "+
-			desk.currentPassenger.totalWeight()+". A baggage fee of "+"**FEE**"+" is due.");
+			Desks.setText(airport.desks.get(0).currentPassenger.getLastName()+" is dropping off 1 bag of "+
+			airport.desks.get(0).currentPassenger.totalWeight()+". A baggage fee of "+"**FEE**"+" is due.");
 			
 			Desks.setVisible(true);
 			desksHolder.add(Desks);
