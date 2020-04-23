@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a654c44-2cca-4ffb-8e89-995f7be611f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/checkIn/QueueManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/checkIn/Timer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Airport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Airport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInDesk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInDesk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInGUI.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/checkIn/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Airport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checkIn/CheckInDesk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/CheckInDesk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checkIn/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkIn/CheckInGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/CheckInGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkIn/QueueManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/QueueManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,7 @@
       <workItem from="1584024235641" duration="874000" />
       <workItem from="1584109702612" duration="2851000" />
       <workItem from="1586441015260" duration="10655000" />
-      <workItem from="1587493069214" duration="24199000" />
+      <workItem from="1587493069214" duration="25758000" />
     </task>
     <servers />
   </component>
@@ -190,22 +187,22 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="533" y="237" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1587493220444" />
-    <state width="1461" height="154" key="GridCell.Tab.0.bottom" timestamp="1587673206821">
+    <state width="1461" height="154" key="GridCell.Tab.0.bottom" timestamp="1587674665710">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1587673206821" />
-    <state width="1461" height="154" key="GridCell.Tab.0.center" timestamp="1587673206821">
+    <state width="1461" height="154" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1587674665710" />
+    <state width="1461" height="154" key="GridCell.Tab.0.center" timestamp="1587674665709">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1587673206821" />
-    <state width="1461" height="154" key="GridCell.Tab.0.left" timestamp="1587673206820">
+    <state width="1461" height="154" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1587674665709" />
+    <state width="1461" height="154" key="GridCell.Tab.0.left" timestamp="1587674665709">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1587673206820" />
-    <state width="1461" height="154" key="GridCell.Tab.0.right" timestamp="1587673206821">
+    <state width="1461" height="154" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1587674665709" />
+    <state width="1461" height="154" key="GridCell.Tab.0.right" timestamp="1587674665709">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1587673206821" />
+    <state width="1461" height="154" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1587674665709" />
     <state width="1461" height="317" key="GridCell.Tab.1.bottom" timestamp="1587663999821">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
@@ -238,10 +235,10 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="524" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1504.963@0.0.1504.963" timestamp="1582550914068" />
-    <state x="483" y="247" key="extract.method.dialog" timestamp="1582628581365">
+    <state x="483" y="247" key="extract.method.dialog" timestamp="1587673832871">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="483" y="247" key="extract.method.dialog/0.0.1504.963@0.0.1504.963" timestamp="1582628581365" />
+    <state x="483" y="247" key="extract.method.dialog/0.0.1504.963@0.0.1504.963" timestamp="1587673832871" />
     <state x="203" y="102" key="new project wizard" timestamp="1582550127500">
       <screen x="0" y="0" width="1504" height="963" />
     </state>

@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class Airport {
 
-    public volatile Queue<Passenger> waitingRoom;
+    public volatile List<Passenger> waitingRoom;
     public volatile Queue<Passenger> queueing;
     public volatile HashMap<String, Flight> planes;
     public volatile CheckInGUI GUI;
@@ -16,7 +16,7 @@ public class Airport {
     public List<CheckInDesk> desks;
     
     public Airport() {
-        waitingRoom = new LinkedList<>();
+        waitingRoom = new ArrayList<>();
         queueing = new LinkedList<>();
         planes = new HashMap<>();
         GUI = new CheckInGUI(this);
@@ -39,7 +39,6 @@ public class Airport {
         //generateTestData("FlightDataRand", "PassengerDataRand");
         readFlightData("FlightDataRand");
         readPassengerData("PassengerDataRand");
-        addBagToPassenger();
         System.out.println("Waiting room is " + waitingRoom.size() + " people large");
 
         Timer timer = new Timer();
@@ -50,7 +49,7 @@ public class Airport {
             String name = "Desk" + (i+1);
             newDesk(name);
         }
-        GUI.createAndShowGUI();
+        //GUI.createAndShowGUI();
         try {
             timer.join();
         } catch (InterruptedException e) {
@@ -302,17 +301,5 @@ public class Airport {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-    //Will add a bag to all Passenger in the waiting room with random values
-    private void addBagToPassenger()
-    {
-    	for(Passenger p : waitingRoom) 
-    	{
-    		Random random = new Random();
-        	int weight = 1 + random.nextInt(30-1);
-    		double volume = (1 + random.nextInt(5000-1))/1000;
-        	Bag b = new Bag(volume, weight);
-        	p.addBag(b);
-    	}
     }
 }
