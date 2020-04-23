@@ -49,7 +49,7 @@ public class CheckInDesk extends Thread {
             checkInPassenger();
 	        GUI.update();
             try {
-                Thread.sleep(100);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
