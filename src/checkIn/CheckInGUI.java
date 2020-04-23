@@ -119,7 +119,7 @@ public class CheckInGUI {
 			desksHolder.add(Desks);
 		}
 		
-		void update() {
+		synchronized void update() {
 			
 			
 			displayPassengers();
