@@ -44,20 +44,25 @@ public class CheckInDesk extends Thread {
     }
 */
     public void run() {
-
         while(!(queue.isEmpty())) {
-            System.out.println(id + " " + queue.size());
-            currentPassenger = queue.remove();
-            System.out.println(currentPassenger.getLastName());
-            String flightCode = currentPassenger.getFlightCode();
-            planes.get(flightCode).addPassenger(currentPassenger);
-            planes.get(flightCode).addFee(currentPassenger.bagCost());
+            System.out.println(id + ": Remaining in queue " + queue.size());
+            checkInPassenger();
             try {
-                Thread.sleep(1);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+        System.out.println(id + " closed.");
+    }
+
+    public synchronized void checkInPassenger(){
+        currentPassenger = queue.remove();
+        System.out.println(id + ": Currently checking in " + currentPassenger.getName());
+        String flightCode = currentPassenger.getFlightCode();
+        planes.get(flightCode).addPassenger(currentPassenger);
+        planes.get(flightCode).addFee(currentPassenger.bagCost());
+        System.out.println(id + ": Finished checking in " + currentPassenger.getName());
     }
 
 	public Queue<Passenger> getQueue() {

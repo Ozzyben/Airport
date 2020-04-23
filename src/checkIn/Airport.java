@@ -36,30 +36,39 @@ public class Airport {
     public void run() {
         //done
         Boolean running = true;
-        generateTestData("FlightDataRand", "PassengerDataRand");
+        //generateTestData("FlightDataRand", "PassengerDataRand");
         readFlightData("FlightDataRand");
         readPassengerData("PassengerDataRand");
         addBagToPassenger();
-        System.out.println(waitingRoom.size());
+        System.out.println("Queue is " + waitingRoom.size() + " people long");
 
         for(int i = 0; i < 2; i++){
             String name = "Desk " + (i+1);
             newDesk(name);
         }
-
-        GUI.createAndShowGUI();                                                 //Generate gui
+        //GUI.createAndShowGUI();                                                 //Generate gui
         try {
             desks.get(0).join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        writeReport();
-        System.exit(0);
+        if(!waitingRoom.isEmpty()){
+            try {
+                desks.get(0).join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } else if(waitingRoom.isEmpty()) {
+            System.out.println("All desks closed, queue empty.\nGenerating report.");
+            writeReport();
+            System.exit(0);
+        }
 
     }
 
     private void newDesk(String deskName){
         CheckInDesk desk = new CheckInDesk(deskName, waitingRoom, planes, GUI);
+        System.out.println("New check in desk " + deskName + " created.");
         desk.start();
         desks.add(desk);
     }

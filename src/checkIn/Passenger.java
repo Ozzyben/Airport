@@ -112,6 +112,10 @@ public class Passenger {
         return fee;
     }
 
+    public String getName(){
+        return firstNames + " " + lastName;
+    }
+
     //Auto generated getter and setters
     public String getLastName() {
         return lastName;

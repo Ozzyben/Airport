@@ -1,0 +1,164 @@
+Report from completed session
+2020-04-23
+
+FLIGHT REPORT: Pr2661 to Prague
+- Number of passengers checked in: 42
+- Total weight of baggage on flight: 2453.0
+- Total size of baggage on flight: 4226.2350000000015
+- Total excess fees: 350.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Lo3774 to London
+- Number of passengers checked in: 65
+- Total weight of baggage on flight: 3112.0
+- Total size of baggage on flight: 6060.6230000000005
+- Total excess fees: 600.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: St7698 to Stockholm
+- Number of passengers checked in: 49
+- Total weight of baggage on flight: 2826.0
+- Total size of baggage on flight: 3838.8109999999997
+- Total excess fees: 325.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Lo5537 to London
+- Number of passengers checked in: 121
+- Total weight of baggage on flight: 6101.0
+- Total size of baggage on flight: 10492.156
+- Total excess fees: 900.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Am9444 to Amsterdam
+- Number of passengers checked in: 26
+- Total weight of baggage on flight: 1103.0
+- Total size of baggage on flight: 2049.267
+- Total excess fees: 125.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Pr5846 to Prague
+- Number of passengers checked in: 154
+- Total weight of baggage on flight: 7421.0
+- Total size of baggage on flight: 14786.392999999996
+- Total excess fees: 1450.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Kr5073 to Krakow
+- Number of passengers checked in: 23
+- Total weight of baggage on flight: 1179.0
+- Total size of baggage on flight: 2040.9079999999997
+- Total excess fees: 150.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: St3370 to Strasbourg
+- Number of passengers checked in: 45
+- Total weight of baggage on flight: 2422.0
+- Total size of baggage on flight: 3898.3789999999995
+- Total excess fees: 300.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Pr2876 to Prague
+- Number of passengers checked in: 37
+- Total weight of baggage on flight: 1704.0
+- Total size of baggage on flight: 3081.561
+- Total excess fees: 250.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: St8990 to Stockholm
+- Number of passengers checked in: 151
+- Total weight of baggage on flight: 7743.0
+- Total size of baggage on flight: 14067.081000000007
+- Total excess fees: 1325.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Lo3311 to London
+- Number of passengers checked in: 37
+- Total weight of baggage on flight: 1759.0
+- Total size of baggage on flight: 3565.1990000000005
+- Total excess fees: 325.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Pr4639 to Prague
+- Number of passengers checked in: 94
+- Total weight of baggage on flight: 4368.0
+- Total size of baggage on flight: 9990.699999999999
+- Total excess fees: 1050.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Am7942 to Amsterdam
+- Number of passengers checked in: 24
+- Total weight of baggage on flight: 1197.0
+- Total size of baggage on flight: 2620.6310000000003
+- Total excess fees: 250.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Pr9590 to Prague
+- Number of passengers checked in: 44
+- Total weight of baggage on flight: 2201.0
+- Total size of baggage on flight: 3594.5819999999994
+- Total excess fees: 350.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Be9265 to Berlin
+- Number of passengers checked in: 37
+- Total weight of baggage on flight: 1858.0
+- Total size of baggage on flight: 3430.5010000000007
+- Total excess fees: 300.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Be6075 to Berlin
+- Number of passengers checked in: 62
+- Total weight of baggage on flight: 3020.0
+- Total size of baggage on flight: 6869.647
+- Total excess fees: 575.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Os6425 to Oslo
+- Number of passengers checked in: 149
+- Total weight of baggage on flight: 7147.0
+- Total size of baggage on flight: 13013.487999999996
+- Total excess fees: 1175.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Pa5333 to Paris
+- Number of passengers checked in: 142
+- Total weight of baggage on flight: 6628.0
+- Total size of baggage on flight: 11275.659000000001
+- Total excess fees: 950.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Os5485 to Oslo
+- Number of passengers checked in: 52
+- Total weight of baggage on flight: 2437.0
+- Total size of baggage on flight: 5180.159000000001
+- Total excess fees: 600.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+FLIGHT REPORT: Os4633 to Oslo
+- Number of passengers checked in: 153
+- Total weight of baggage on flight: 7238.0
+- Total size of baggage on flight: 14704.476999999993
+- Total excess fees: 1400.0
+FLIGHT IS OVER MAX BAGGAGE WEIGHT!
+FLIGHT IS OVER MAX BAGGAGE VOLUME!
+
+Total passengers not checked in: 0
