@@ -49,8 +49,10 @@ public class CheckInDesk extends Thread {
     public void run() {
         while(true) {
             while (!(queue.isEmpty())) {
-                System.out.println(id + ": Remaining in queue " + queue.size());
-                checkInPassenger();
+                System.out.println(id + ": Currently in queue " + queue.size());
+                if(!queue.isEmpty()) {
+                    checkInPassenger();
+                }
                 //GUI.update();
                 try {
                     Thread.sleep(100);
@@ -58,7 +60,7 @@ public class CheckInDesk extends Thread {
                     e.printStackTrace();
                 }
             }
-            System.out.println(id + " closed.");
+            System.out.println(id + " waiting.");
             try {
                 Thread.sleep(1000);
 

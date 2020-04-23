@@ -6,7 +6,7 @@ public class Log {
     private String log;
 
     private void Log(){
-        log = "";
+        log = "Airport Log\n\n";
     }
 
     public static Log getInstance(){

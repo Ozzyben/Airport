@@ -17,6 +17,7 @@ public class Airport {
     
     public Airport() {
         waitingRoom = new LinkedList<>();
+        queueing = new LinkedList<>();
         planes = new HashMap<>();
         GUI = new CheckInGUI(this);
         desks = new ArrayList<>();
@@ -39,36 +40,32 @@ public class Airport {
         readFlightData("FlightDataRand");
         readPassengerData("PassengerDataRand");
         addBagToPassenger();
-        System.out.println("Queue is " + waitingRoom.size() + " people long");
+        System.out.println("Waiting room is " + waitingRoom.size() + " people large");
 
+        Timer timer = new Timer();
+        timer.start();
+        QueueManager manager = new QueueManager(waitingRoom, queueing);
+        manager.start();
         for(int i = 0; i < 2; i++){
             String name = "Desk" + (i+1);
             newDesk(name);
         }
         //GUI.createAndShowGUI();
         try {
-            desks.get(0).join();
+            timer.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if(!waitingRoom.isEmpty()){
-            try {
-                desks.get(0).join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        } else if(waitingRoom.isEmpty()) {
-            log.updateLog("All desks closed, queue empty.\nGenerating report.");
-            writeReport();
-            writeLogToFile();
-            System.exit(0);
-        }
+        log.updateLog("Time up, all desks closed\nGenerating report.");
+        writeReport();
+        writeLogToFile();
+        System.exit(0);
 
     }
 
     private void newDesk(String deskName){
-        CheckInDesk desk = new CheckInDesk(deskName, waitingRoom, planes, GUI);
-        log.updateLog("New check in desk " + deskName + " opened.");
+        CheckInDesk desk = new CheckInDesk(deskName, queueing, planes, GUI);
+        log.updateLog("New check-in desk " + deskName + " opened.");
         desk.start();
         desks.add(desk);
     }
