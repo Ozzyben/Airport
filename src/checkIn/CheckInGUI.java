@@ -106,7 +106,7 @@ public class CheckInGUI {
 			Desks.setBounds((desksWidth*desk.deskNumber) - desksWidth, height/3, desksWidth, desksHeight);
 			
 			Desks.setText(airport.desks.get(0).currentPassenger.getLastName()+" is dropping off 1 bag of "+
-			airport.desks.get(0).currentPassenger.totalWeight()+". A baggage fee of "+"**FEE**"+" is due.");
+			airport.desks.get(0).currentPassenger.totalWeight()+". A baggage fee of "+desk.currentPassenger.bagCost()+" is due.");
 			
 			Desks.setVisible(true);
 			desksHolder.add(Desks);
