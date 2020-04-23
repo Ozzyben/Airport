@@ -10,6 +10,8 @@ public class Airport {
     public volatile HashMap<String, Flight> planes;
     public volatile CheckInGUI GUI;
 
+    public volatile Log log;
+
     private int feePerExtraBag = 25;    //fee for each bag after first
     private int excessBagSize = 3;      //size bag can be before excess fees apply
     private int excessBagWeight = 20;   //weight a bag can be before excess fees apply
@@ -22,6 +24,7 @@ public class Airport {
         planes = new HashMap<>();
         GUI = new CheckInGUI(this);
         desks = new ArrayList<>();
+        log = Log.getInstance();
     }
 
     /*Main, duh*/
@@ -43,10 +46,10 @@ public class Airport {
         System.out.println("Queue is " + waitingRoom.size() + " people long");
 
         for(int i = 0; i < 2; i++){
-            String name = "desk" + (i+1);
+            String name = "Desk" + (i+1);
             newDesk(name);
         }
-        GUI.createAndShowGUI();
+        //GUI.createAndShowGUI();
         try {
             desks.get(0).join();
         } catch (InterruptedException e) {
@@ -59,8 +62,9 @@ public class Airport {
                 e.printStackTrace();
             }
         } else if(waitingRoom.isEmpty()) {
-            System.out.println("All desks closed, queue empty.\nGenerating report.");
+            log.updateLog("All desks closed, queue empty.\nGenerating report.");
             writeReport();
+            writeLogToFile();
             System.exit(0);
         }
 
@@ -68,7 +72,7 @@ public class Airport {
 
     private void newDesk(String deskName){
         CheckInDesk desk = new CheckInDesk(deskName, waitingRoom, planes, GUI);
-        System.out.println("New check in desk " + deskName + " created.");
+        log.updateLog("New check in desk " + deskName + " opened.");
         desk.start();
         desks.add(desk);
     }
@@ -179,7 +183,7 @@ public class Airport {
 
     /*Takes in list of reports and formats them into longform final output string
      * write this to file as well as return*/
-    private String writeReport() {
+    private void writeReport() {
         //done
         String fullReport = "";                                                         //full report string
         List<String> reports = collectReports();                                        //grab all flight reports
@@ -214,8 +218,32 @@ public class Airport {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return fullReport;                                                              //return the whole report string
     }
+
+    private void writeLogToFile() {
+        String fileName = "log" + System.currentTimeMillis() + ".txt";               //make new file name
+        try {
+            File write = new File(fileName);                                            //file
+            if (!write.exists()) {                                                      //if its not already real
+                write.createNewFile();                                                  //make it
+                //System.out.println("File created successfully");
+            } else {
+                System.out.println("File already exits\nLog not saved");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            BufferedWriter fw = new BufferedWriter(new FileWriter(fileName));           //writer
+            fw.write(log.getLog());                                                       //write the whole report string
+            fw.close();
+            System.out.println("Log written to: " + fileName);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     private void generateTestData(String flightDataName, String passengerDataName){
         String[] firstName = {"Jerry", "Herbert", "Tatiana", "Herman", "Eilidh", "Elizabeth", "Bruno", "Theodore", "Louise", "Chloe", "Jamie", "Ryan", "Hermione", "Michael"};
@@ -233,7 +261,7 @@ public class Airport {
             String flightCode = destination.substring(0,2) + (Math.round(Math.random() * 8999)+1000);
             int passengerNum = (int) ((Math.round(Math.random() * 15)+5)*10);
             flightData += flightCode + ", " + destination + ", " + airline + ", " + passengerNum + ", " + ((Math.round(Math.random()*20))*50) + ", " + ((Math.round(Math.random()*20))*50) + "\n";
-            for(int j = 0; j < (passengerNum - ((int)Math.round(Math.random()*50))); j++){
+            for(int j = 0; j < 20/*(passengerNum - ((int)Math.round(Math.random()*50)))*/; j++){
                 String FName = firstName[(int) Math.round(Math.random() * (firstName.length-1))];
                 String LName = lastName[(int) Math.round(Math.random()* (lastName.length-1))];
                 String passengerCode = LName.substring(0,2) + (Math.round(Math.random()*89999999)+10000000) + FName.substring(0,2);

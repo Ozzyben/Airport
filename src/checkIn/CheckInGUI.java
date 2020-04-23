@@ -53,7 +53,7 @@ public class CheckInGUI {
 			
 		}
 		
-		public void displayPassengers() {
+		public synchronized void displayPassengers() {
 			
 			//size is just the same width as the frame and 1/3 of the height. this will change for iteration 2
 			int passengerListWidth = width;
@@ -112,7 +112,7 @@ public class CheckInGUI {
 			desksHolder.add(Desks);
 		}
 		
-		synchronized void update() {
+		public void update() {
 			
 			
 			displayPassengers();

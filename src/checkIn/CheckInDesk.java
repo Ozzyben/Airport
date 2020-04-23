@@ -14,12 +14,15 @@ public class CheckInDesk extends Thread {
     private static int deskCount = 0;
     public int deskNumber = 0;
 
+    private Log log;
+
     public CheckInDesk (String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2){
         this.id = id;
         this.setQueue(queue);
         this.planes = planes;
         this.GUI = gUI2;
         deskNumber = deskCount++;
+        log = Log.getInstance();
     }
 /*    
     private void addPassanger(Passenger passenger){
@@ -47,23 +50,23 @@ public class CheckInDesk extends Thread {
         while(!(queue.isEmpty())) {
             System.out.println(id + ": Remaining in queue " + queue.size());
             checkInPassenger();
-	        GUI.update();
+	        //GUI.update();
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println(id + " closed.");
+        log.updateLog(id + " closed.");
     }
 
     public synchronized void checkInPassenger(){
         currentPassenger = queue.remove();
-        System.out.println(id + ": Currently checking in " + currentPassenger.getName());
+        log.updateLog(id + ": Currently checking in " + currentPassenger.getName());
         String flightCode = currentPassenger.getFlightCode();
         planes.get(flightCode).addPassenger(currentPassenger);
-        planes.get(flightCode).addFee(currentPassenger.bagCost());
-        System.out.println(id + ": Finished checking in " + currentPassenger.getName());
+        planes.get(flightCode).addFee(currentPassenger.bagCost());;
+        log.updateLog(id + ": Finished checking in " + currentPassenger.getName());
     }
 
 	public Queue<Passenger> getQueue() {
