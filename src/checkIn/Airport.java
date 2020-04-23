@@ -6,24 +6,22 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class Airport {
 
-    private volatile Queue<Passenger> waitingRoom;
+    public volatile Queue<Passenger> waitingRoom;
     public volatile HashMap<String, Flight> planes;
-    private volatile CheckInGUI GUI;
+    public volatile CheckInGUI GUI;
 
     private int feePerExtraBag = 25;    //fee for each bag after first
     private int excessBagSize = 3;      //size bag can be before excess fees apply
     private int excessBagWeight = 20;   //weight a bag can be before excess fees apply
     private int excessFee = 50;         //the excess fee needed for over volume/weight
 
-    
-    CheckInDesk desk1;
-    CheckInDesk desk2;
+    public List<CheckInDesk> desks;
     
     public Airport() {
         waitingRoom = new LinkedList<>();
-
         planes = new HashMap<>();
         GUI = new CheckInGUI(this);
+        desks = new ArrayList<>();
     }
 
     /*Main, duh*/
@@ -44,21 +42,26 @@ public class Airport {
         addBagToPassenger();
         System.out.println(waitingRoom.size());
 
-        
-        desk1 = new CheckInDesk(waitingRoom, planes, GUI);
-        desk2 = new CheckInDesk(waitingRoom,planes,GUI);
-        desk1.start();
-        desk2.start();
-        GUI.createAndShowGUI();                                                 //Generate gui
+        for(int i = 0; i < 2; i++){
+            String name = "desk" + i;
+            newDesk(name);
+        }
+
+        //GUI.createAndShowGUI();                                                 //Generate gui
         try {
-            desk1.join();
-            desk1.currentThread().sleep(6000); //End simulation after 6 seconds
+            desks.get(0).join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         writeReport();
         System.exit(0);
 
+    }
+
+    private void newDesk(String deskName){
+        CheckInDesk desk = new CheckInDesk(deskName, waitingRoom, planes, GUI);
+        desk.start();
+        desks.add(desk);
     }
 
     /*Will read in flight data from file
@@ -234,7 +237,7 @@ public class Airport {
                 write.createNewFile();                                                  //make it
                 //System.out.println("File created successfully");
             } else {
-                System.out.println("File already exits\nReports not saved");
+                System.out.println("File already exits\nTest data not saved");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -244,7 +247,7 @@ public class Airport {
             BufferedWriter fw = new BufferedWriter(new FileWriter(flightDataName));           //writer
             fw.write(flightData);                                                       //write the whole report string
             fw.close();
-            System.out.println("Report written to: " + flightDataName);
+            System.out.println("Test data written to: " + flightDataName);
         } catch (IOException e) {
             e.printStackTrace();
         }	
@@ -255,7 +258,7 @@ public class Airport {
                 write.createNewFile();                                                  //make it
                 //System.out.println("File created successfully");
             } else {
-                System.out.println("File already exits\nReports not saved");
+                System.out.println("File already exits\nTest data not saved");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -265,7 +268,7 @@ public class Airport {
             BufferedWriter fw = new BufferedWriter(new FileWriter(passengerDataName));           //writer
             fw.write(passengerData);                                                       //write the whole report string
             fw.close();
-            System.out.println("Report written to: " + passengerDataName);
+            System.out.println("Test data written to: " + passengerDataName);
         } catch (IOException e) {
             e.printStackTrace();
         }

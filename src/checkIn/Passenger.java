@@ -22,6 +22,7 @@ public class Passenger {
         this.firstNames = firstNames;
         this.flightCode = flightCode;
         this.checkedIn = checkedIn;
+        bag = new Bag(0,0);
     }
 
     public Boolean invalidBookingReference(String ref){
@@ -97,6 +98,19 @@ public class Passenger {
         return fee;
     }*/
 
+    public double bagCost(){
+        double size = bag.getSize();
+        double weight = bag.getWeight();
+        double fee = 0;
+
+        if(size > 100){
+            fee += 25;
+        }
+        if(weight > 100){
+            fee += 25;
+        }
+        return fee;
+    }
 
     //Auto generated getter and setters
     public String getLastName() {

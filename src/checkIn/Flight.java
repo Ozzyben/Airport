@@ -120,4 +120,5 @@ public class Flight {
     public double getExcessFees() {
         return excessFees;
     }
+    public void addFee(double fee){ this.excessFees += fee;}
 }

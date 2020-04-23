@@ -61,7 +61,6 @@ public class CheckInGUI {
 			int passengerListWidth = width;
 			int PassengerListHeight = height/3;
 			passengerList.setBounds(0, 0, passengerListWidth, PassengerListHeight);
-			
 			Iterator<Passenger> it = airport.waitingRoom.iterator();    
 	        	int i = 0;
 	        	while(it.hasNext()) {
@@ -80,12 +79,17 @@ public class CheckInGUI {
 		}
 		
 		public void displayDesks(){
-			
 			Iterator<CheckInDesk> iterator = airport.desks.iterator();
 			int totalDesks = airport.desks.size();
 			while (iterator.hasNext()){
 				createDeskDisplay(iterator.next(), totalDesks);
 			}
+			int desksWidth = width;
+			int desksHeight = height/3;
+			Desks.setBounds(0, height/3, desksWidth, desksHeight);
+			
+			Desks.setText(airport.desks.get(0).currentPassenger.getLastName()+" is dropping off 1 bag of "+
+			airport.desks.get(0).currentPassenger.totalWeight()+". A baggage fee of "+"**FEE**"+" is due.");
 			
 			frame.add(desksHolder);
 		}
@@ -97,7 +101,7 @@ public class CheckInGUI {
 			int flightsHeight = height/3;
 			flights.setBounds(0, 2*height/3, flightsWidth, flightsHeight);
 			
-			Flight flightDisplayed = airport.planes.get(airport.desk1.currentPassenger.getFlightCode());
+			Flight flightDisplayed = airport.planes.get(airport.desks.get(0).currentPassenger.getFlightCode());
 			flights.setText(flightDisplayed.flightCode + "  "+ flightDisplayed.destination);
 			
 			flights.setVisible(true);

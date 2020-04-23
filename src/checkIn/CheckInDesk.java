@@ -6,6 +6,7 @@ import java.util.Queue;
 
 public class CheckInDesk extends Thread {
 
+    public String id;
 	private Queue<Passenger> queue;
     public Passenger currentPassenger;
     private HashMap<String, Flight> planes;
@@ -13,7 +14,8 @@ public class CheckInDesk extends Thread {
     private static int deskCount = 0;
     public int deskNumber = 0;
 
-    public CheckInDesk (Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2){
+    public CheckInDesk (String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2){
+        this.id = id;
         this.setQueue(queue);
         this.planes = planes;
         this.GUI = gUI2;
@@ -44,11 +46,13 @@ public class CheckInDesk extends Thread {
     public void run() {
         while(!getQueue().isEmpty()) {
             currentPassenger = getQueue().remove();
-            System.out.println(currentPassenger.getFlightCode());
+            //System.out.println(currentPassenger.getFlightCode());
             String flightCode = currentPassenger.getFlightCode();
             planes.get(flightCode).addPassenger(currentPassenger);
+            planes.get(flightCode).addFee(currentPassenger.bagCost());
         }
     }
+
 	public Queue<Passenger> getQueue() {
 		return queue;
 	}

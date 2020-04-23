@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a654c44-2cca-4ffb-8e89-995f7be611f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/checkIn/CheckInDesk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightDataRand" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassengerDataRand" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Bag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/CheckInException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/InvalidDataException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/checkIn/InvalidDataException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/tests/BagTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/tests/BagTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/tests/FlightTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/tests/FlightTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ASECoursework/tests/PassengerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ASECoursework/tests/PassengerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report1586534764067.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report1586534795445.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report1586534801089.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/checkIn/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkIn/CheckInDesk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/CheckInDesk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkIn/CheckInGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/CheckInGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checkIn/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/checkIn/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checkIn/Passenger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +40,6 @@
   <component name="ProjectId" id="1X9r0DnyWQD1y1bncsBhOkc2wOd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -145,12 +158,13 @@
       <workItem from="1582804325183" duration="158000" />
       <workItem from="1584024235641" duration="874000" />
       <workItem from="1584109702612" duration="2851000" />
-      <workItem from="1586441015260" duration="10518000" />
+      <workItem from="1586441015260" duration="10655000" />
+      <workItem from="1587493069214" duration="5865000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="350" y="148" key="#BagTest" timestamp="1582550479902">
@@ -181,26 +195,26 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="501" y="337" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1504.963@0.0.1504.963" timestamp="1582730277329" />
-    <state x="533" y="237" key="FileChooserDialogImpl" timestamp="1580469780165">
+    <state x="533" y="237" key="FileChooserDialogImpl" timestamp="1587493220444">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="533" y="237" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1580469780165" />
-    <state width="1461" height="154" key="GridCell.Tab.0.bottom" timestamp="1586451599708">
+    <state x="533" y="237" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1587493220444" />
+    <state width="1461" height="154" key="GridCell.Tab.0.bottom" timestamp="1587497289184">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1586451599708" />
-    <state width="1461" height="154" key="GridCell.Tab.0.center" timestamp="1586451599707">
+    <state width="1461" height="154" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1587497289184" />
+    <state width="1461" height="154" key="GridCell.Tab.0.center" timestamp="1587497289183">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1586451599707" />
-    <state width="1461" height="154" key="GridCell.Tab.0.left" timestamp="1586451599707">
+    <state width="1461" height="154" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1587497289183" />
+    <state width="1461" height="154" key="GridCell.Tab.0.left" timestamp="1587497289183">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1586451599707" />
-    <state width="1461" height="154" key="GridCell.Tab.0.right" timestamp="1586451599708">
+    <state width="1461" height="154" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1587497289183" />
+    <state width="1461" height="154" key="GridCell.Tab.0.right" timestamp="1587497289184">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="154" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1586451599708" />
+    <state width="1461" height="154" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1587497289184" />
     <state width="1461" height="317" key="GridCell.Tab.1.bottom" timestamp="1582556154470">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
@@ -241,9 +255,9 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="203" y="102" key="new project wizard/0.0.1504.963@0.0.1504.963" timestamp="1582550127500" />
-    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1581682868673">
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1587652277130">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1504.963@0.0.1504.963" timestamp="1581682868673" />
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1504.963@0.0.1504.963" timestamp="1587652277130" />
   </component>
 </project>
