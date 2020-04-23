@@ -14,7 +14,7 @@ public class Airport {
     public volatile Log log;
 
     public List<CheckInDesk> desks;
-    
+
     public Airport() {
         waitingRoom = new ArrayList<>();
         queueing = new LinkedList<>();
@@ -45,8 +45,8 @@ public class Airport {
         timer.start();
         QueueManager manager = new QueueManager(waitingRoom, queueing);
         manager.start();
-        for(int i = 0; i < 2; i++){
-            String name = "Desk" + (i+1);
+        for (int i = 0; i < 2; i++) {
+            String name = "Desk" + (i + 1);
             newDesk(name);
         }
         GUI.createAndShowGUI();
@@ -63,7 +63,7 @@ public class Airport {
 
     }
 
-    private void newDesk(String deskName){
+    private void newDesk(String deskName) {
         CheckInDesk desk = new CheckInDesk(deskName, queueing, planes, GUI);
         log.updateLog("New check-in desk " + deskName + " opened.");
         desk.start();
@@ -84,7 +84,7 @@ public class Airport {
                 for (int i = 0; i < data.length; i++) {
                     data[i] = data[i].trim();                       //trim off white space
                 }
-                if(data.length == 6) {
+                if (data.length == 6) {
                     try {
                         Flight f = new Flight(data[0], data[1], data[2], Integer.parseInt(data[3]), Integer.parseInt(data[4]), Integer.parseInt(data[5])); //make new flight object using read data
                         planes.put(data[0], f);                             //put the flight in the map with flight code as ref
@@ -238,7 +238,7 @@ public class Airport {
     }
 
 
-    private void generateTestData(String flightDataName, String passengerDataName){
+    private void generateTestData(String flightDataName, String passengerDataName) {
         String[] firstName = {"Jerry", "Herbert", "Tatiana", "Herman", "Eilidh", "Elizabeth", "Bruno", "Theodore", "Louise", "Chloe", "Jamie", "Ryan", "Hermione", "Michael"};
         String[] lastName = {"McKay", "Hogg", "Tonyoli", "Gorse", "Feasby", "Cassidy", "Edwards", "Marshall", "Hughes", "Reilly", "Swartz"};
 
@@ -248,16 +248,16 @@ public class Airport {
         String flightData = "";
         String passengerData = "";
 
-        for(int i = 0; i < 5; i++){
-            String destination = destinations[(int) Math.round(Math.random() * (destinations.length-1))];
-            String airline = airlines[(int) Math.round(Math.random() * (airlines.length-1))];
-            String flightCode = destination.substring(0,2) + (Math.round(Math.random() * 8999)+1000);
-            int passengerNum = (int) ((Math.round(Math.random() * 15)+5)*10);
+        for (int i = 0; i < 5; i++) {
+            String destination = destinations[(int) Math.round(Math.random() * (destinations.length - 1))];
+            String airline = airlines[(int) Math.round(Math.random() * (airlines.length - 1))];
+            String flightCode = destination.substring(0, 2) + (Math.round(Math.random() * 8999) + 1000);
+            int passengerNum = (int) ((Math.round(Math.random() * 15) + 5) * 10);
             flightData += flightCode + ", " + destination + ", " + airline + ", " + passengerNum + ", " + (passengerNum * 25) + ", " + (passengerNum * 4) + "\n";
-            for(int j = 0; j < (passengerNum - ((int)Math.round(Math.random()*50))); j++){
-                String FName = firstName[(int) Math.round(Math.random() * (firstName.length-1))];
-                String LName = lastName[(int) Math.round(Math.random()* (lastName.length-1))];
-                String passengerCode = LName.substring(0,2) + (Math.round(Math.random()*89999999)+10000000) + FName.substring(0,2);
+            for (int j = 0; j < (passengerNum - ((int) Math.round(Math.random() * 50))); j++) {
+                String FName = firstName[(int) Math.round(Math.random() * (firstName.length - 1))];
+                String LName = lastName[(int) Math.round(Math.random() * (lastName.length - 1))];
+                String passengerCode = LName.substring(0, 2) + (Math.round(Math.random() * 89999999) + 10000000) + FName.substring(0, 2);
                 passengerData += passengerCode + ", " + LName + ", " + FName + ", " + flightCode + ", FALSE\n";
             }
         }
@@ -280,7 +280,7 @@ public class Airport {
             System.out.println("Test data written to: " + flightDataName);
         } catch (IOException e) {
             e.printStackTrace();
-        }	
+        }
 
         try {
             File write = new File(passengerDataName);                                            //file

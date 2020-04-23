@@ -7,7 +7,7 @@ import java.util.Queue;
 public class CheckInDesk extends Thread {
 
     public String id;
-	private Queue<Passenger> queue;
+    private Queue<Passenger> queue;
     public Passenger currentPassenger;
     private HashMap<String, Flight> planes;
     private CheckInGUI GUI;
@@ -16,7 +16,7 @@ public class CheckInDesk extends Thread {
 
     private Log log;
 
-    public CheckInDesk (String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2){
+    public CheckInDesk(String id, Queue<Passenger> queue, HashMap<String, Flight> planes, CheckInGUI gUI2) {
         this.id = id;
         this.setQueue(queue);
         this.planes = planes;
@@ -24,15 +24,16 @@ public class CheckInDesk extends Thread {
         deskNumber = deskCount++;
         log = Log.getInstance();
     }
-/*    
-    private void addPassanger(Passenger passenger){
-    	if (queue.contains(passenger)){
-    		System.out.println("Passenger is already in the queue for this desk!");
-    	}else{
-    		queue.add(passenger);
-    	}
-    }
-*/
+
+    /*
+        private void addPassanger(Passenger passenger){
+            if (queue.contains(passenger)){
+                System.out.println("Passenger is already in the queue for this desk!");
+            }else{
+                queue.add(passenger);
+            }
+        }
+    */
 /* 
     private String createQueueList(){
     	String passsengerList = "";
@@ -47,13 +48,12 @@ public class CheckInDesk extends Thread {
     }
 */
     public void run() {
-        while(true) {
+        while (true) {
             while (!(queue.isEmpty())) {
                 System.out.println(id + ": Currently in queue " + queue.size());
-                if(!queue.isEmpty()) {
+                if (!queue.isEmpty()) {
                     checkInPassenger();
                 }
-                //GUI.update();
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
@@ -70,7 +70,7 @@ public class CheckInDesk extends Thread {
         }
     }
 
-    public synchronized void checkInPassenger(){
+    public synchronized void checkInPassenger() {
         currentPassenger = queue.remove();
         log.updateLog(id + ": Currently checking in " + currentPassenger.getName());
         String flightCode = currentPassenger.getFlightCode();
@@ -80,12 +80,13 @@ public class CheckInDesk extends Thread {
         log.updateLog(id + ": Finished checking in " + currentPassenger.getName() + ", required £" + fee + " luggage fee");
     }
 
-	public Queue<Passenger> getQueue() {
-		return queue;
-	}
-	public void setQueue(Queue<Passenger> queue) {
-		this.queue = queue;
-	}
-	
+    public Queue<Passenger> getQueue() {
+        return queue;
+    }
+
+    public void setQueue(Queue<Passenger> queue) {
+        this.queue = queue;
+    }
+
 
 }

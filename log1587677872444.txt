@@ -1,0 +1,556 @@
+nullNew check-in desk Desk1 opened.
+New check-in desk Desk2 opened.
+Passenger Herman Marshall joined queue
+Passenger Eilidh Cassidy joined queue
+Passenger Elizabeth Feasby joined queue
+Passenger Herman Swartz joined queue
+Passenger Herman Hogg joined queue
+Passenger Theodore Reilly joined queue
+Passenger Elizabeth Hughes joined queue
+Passenger Eilidh Reilly joined queue
+Passenger Tatiana Feasby joined queue
+Passenger Hermione Marshall joined queue
+Passenger Herbert Reilly joined queue
+Passenger Chloe Gorse joined queue
+Passenger Elizabeth Cassidy joined queue
+Passenger Herbert Hogg joined queue
+Passenger Hermione Tonyoli joined queue
+Passenger Herbert Marshall joined queue
+Passenger Herbert Gorse joined queue
+Passenger Jamie Cassidy joined queue
+Passenger Jamie Cassidy joined queue
+Passenger Louise Feasby joined queue
+Desk2: Currently checking in Herman Marshall
+Desk1: Currently checking in Eilidh Cassidy
+Desk2: Finished checking in Herman Marshall, required £0.0 luggage fee
+Desk1: Finished checking in Eilidh Cassidy, required £25.0 luggage fee
+Passenger Theodore Edwards joined queue
+Desk1: Currently checking in Elizabeth Feasby
+Desk2: Currently checking in Herman Swartz
+Desk2: Finished checking in Herman Swartz, required £25.0 luggage fee
+Desk1: Finished checking in Elizabeth Feasby, required £25.0 luggage fee
+Passenger Jerry Feasby joined queue
+Desk2: Currently checking in Herman Hogg
+Desk2: Finished checking in Herman Hogg, required £25.0 luggage fee
+Desk1: Currently checking in Theodore Reilly
+Desk1: Finished checking in Theodore Reilly, required £0.0 luggage fee
+Passenger Chloe Hogg joined queue
+Passenger Jerry Feasby joined queue
+Passenger Eilidh Reilly joined queue
+Desk2: Currently checking in Elizabeth Hughes
+Desk2: Finished checking in Elizabeth Hughes, required £25.0 luggage fee
+Desk1: Currently checking in Eilidh Reilly
+Desk1: Finished checking in Eilidh Reilly, required £50.0 luggage fee
+Passenger Chloe Tonyoli joined queue
+Passenger Chloe Gorse joined queue
+Passenger Ryan Edwards joined queue
+Desk2: Currently checking in Tatiana Feasby
+Desk2: Finished checking in Tatiana Feasby, required £25.0 luggage fee
+Passenger Hermione Reilly joined queue
+Desk1: Currently checking in Hermione Marshall
+Desk1: Finished checking in Hermione Marshall, required £0.0 luggage fee
+Passenger Herman Edwards joined queue
+Desk2: Currently checking in Herbert Reilly
+Desk2: Finished checking in Herbert Reilly, required £50.0 luggage fee
+Desk1: Currently checking in Chloe Gorse
+Desk1: Finished checking in Chloe Gorse, required £25.0 luggage fee
+Passenger Herman Marshall joined queue
+Passenger Theodore Hughes joined queue
+Desk2: Currently checking in Elizabeth Cassidy
+Desk2: Finished checking in Elizabeth Cassidy, required £0.0 luggage fee
+Desk1: Currently checking in Herbert Hogg
+Desk1: Finished checking in Herbert Hogg, required £0.0 luggage fee
+Passenger Louise Marshall joined queue
+Passenger Theodore Hughes joined queue
+Desk2: Currently checking in Hermione Tonyoli
+Desk2: Finished checking in Hermione Tonyoli, required £0.0 luggage fee
+Desk1: Currently checking in Herbert Marshall
+Desk1: Finished checking in Herbert Marshall, required £0.0 luggage fee
+Passenger Herbert Tonyoli joined queue
+Desk2: Currently checking in Herbert Gorse
+Desk2: Finished checking in Herbert Gorse, required £0.0 luggage fee
+Desk1: Currently checking in Jamie Cassidy
+Desk1: Finished checking in Jamie Cassidy, required £0.0 luggage fee
+Passenger Herbert Hogg joined queue
+Passenger Herman Reilly joined queue
+Passenger Jamie Hogg joined queue
+Desk2: Currently checking in Jamie Cassidy
+Desk2: Finished checking in Jamie Cassidy, required £0.0 luggage fee
+Desk1: Currently checking in Louise Feasby
+Desk1: Finished checking in Louise Feasby, required £0.0 luggage fee
+Passenger Jamie Swartz joined queue
+Desk2: Currently checking in Theodore Edwards
+Desk2: Finished checking in Theodore Edwards, required £50.0 luggage fee
+Desk1: Currently checking in Jerry Feasby
+Desk1: Finished checking in Jerry Feasby, required £0.0 luggage fee
+Passenger Eilidh Tonyoli joined queue
+Passenger Herman Marshall joined queue
+Passenger Louise Gorse joined queue
+Desk2: Currently checking in Chloe Hogg
+Desk2: Finished checking in Chloe Hogg, required £0.0 luggage fee
+Desk1: Currently checking in Jerry Feasby
+Desk1: Finished checking in Jerry Feasby, required £0.0 luggage fee
+Passenger Jamie Hogg joined queue
+Desk2: Currently checking in Eilidh Reilly
+Desk2: Finished checking in Eilidh Reilly, required £0.0 luggage fee
+Passenger Chloe Tonyoli joined queue
+Desk1: Currently checking in Chloe Tonyoli
+Desk1: Finished checking in Chloe Tonyoli, required £50.0 luggage fee
+Passenger Tatiana Reilly joined queue
+Desk2: Currently checking in Chloe Gorse
+Desk2: Finished checking in Chloe Gorse, required £25.0 luggage fee
+Desk1: Currently checking in Ryan Edwards
+Desk1: Finished checking in Ryan Edwards, required £0.0 luggage fee
+Passenger Ryan Marshall joined queue
+Passenger Herman Cassidy joined queue
+Passenger Herbert McKay joined queue
+Desk2: Currently checking in Hermione Reilly
+Desk2: Finished checking in Hermione Reilly, required £50.0 luggage fee
+Desk1: Currently checking in Herman Edwards
+Desk1: Finished checking in Herman Edwards, required £25.0 luggage fee
+Passenger Ryan Edwards joined queue
+Passenger Tatiana Tonyoli joined queue
+Passenger Hermione Marshall joined queue
+Desk2: Currently checking in Herman Marshall
+Desk2: Finished checking in Herman Marshall, required £0.0 luggage fee
+Passenger Louise Reilly joined queue
+Desk1: Currently checking in Theodore Hughes
+Desk1: Finished checking in Theodore Hughes, required £25.0 luggage fee
+Desk2: Currently checking in Louise Marshall
+Desk2: Finished checking in Louise Marshall, required £0.0 luggage fee
+Desk1: Currently checking in Theodore Hughes
+Desk1: Finished checking in Theodore Hughes, required £25.0 luggage fee
+Passenger Louise Tonyoli joined queue
+Passenger Eilidh Hughes joined queue
+Desk2: Currently checking in Herbert Tonyoli
+Desk2: Finished checking in Herbert Tonyoli, required £25.0 luggage fee
+Desk1: Currently checking in Herbert Hogg
+Desk1: Finished checking in Herbert Hogg, required £0.0 luggage fee
+Passenger Louise Cassidy joined queue
+Passenger Tatiana Marshall joined queue
+Desk2: Currently checking in Herman Reilly
+Desk2: Finished checking in Herman Reilly, required £25.0 luggage fee
+Desk1: Currently checking in Jamie Hogg
+Desk1: Finished checking in Jamie Hogg, required £25.0 luggage fee
+Passenger Hermione Tonyoli joined queue
+Desk2: Currently checking in Jamie Swartz
+Desk2: Finished checking in Jamie Swartz, required £0.0 luggage fee
+Desk1: Currently checking in Eilidh Tonyoli
+Desk1: Finished checking in Eilidh Tonyoli, required £0.0 luggage fee
+Passenger Louise Tonyoli joined queue
+Desk2: Currently checking in Herman Marshall
+Desk2: Finished checking in Herman Marshall, required £0.0 luggage fee
+Desk1: Currently checking in Louise Gorse
+Desk1: Finished checking in Louise Gorse, required £0.0 luggage fee
+Passenger Tatiana Gorse joined queue
+Passenger Ryan Hughes joined queue
+Desk2: Currently checking in Jamie Hogg
+Desk2: Finished checking in Jamie Hogg, required £0.0 luggage fee
+Desk1: Currently checking in Chloe Tonyoli
+Desk1: Finished checking in Chloe Tonyoli, required £25.0 luggage fee
+Passenger Herbert Swartz joined queue
+Passenger Elizabeth Hughes joined queue
+Desk2: Currently checking in Tatiana Reilly
+Desk2: Finished checking in Tatiana Reilly, required £0.0 luggage fee
+Desk1: Currently checking in Ryan Marshall
+Desk1: Finished checking in Ryan Marshall, required £0.0 luggage fee
+Passenger Hermione Gorse joined queue
+Passenger Chloe Cassidy joined queue
+Desk2: Currently checking in Herman Cassidy
+Desk2: Finished checking in Herman Cassidy, required £25.0 luggage fee
+Desk1: Currently checking in Herbert McKay
+Desk1: Finished checking in Herbert McKay, required £25.0 luggage fee
+Passenger Eilidh Gorse joined queue
+Desk2: Currently checking in Ryan Edwards
+Desk2: Finished checking in Ryan Edwards, required £50.0 luggage fee
+Desk1: Currently checking in Tatiana Tonyoli
+Desk1: Finished checking in Tatiana Tonyoli, required £25.0 luggage fee
+Passenger Herman Marshall joined queue
+Passenger Tatiana Hogg joined queue
+Desk2: Currently checking in Hermione Marshall
+Desk2: Finished checking in Hermione Marshall, required £50.0 luggage fee
+Desk1: Currently checking in Louise Reilly
+Desk1: Finished checking in Louise Reilly, required £0.0 luggage fee
+Passenger Michael Tonyoli joined queue
+Passenger Hermione Marshall joined queue
+Passenger Herbert Feasby joined queue
+Desk2: Finished checking in Chloe Feasby, required £50.0 luggage fee
+Desk1: Currently checking in Louise Tonyoli
+Desk1: Finished checking in Louise Tonyoli, required £25.0 luggage fee
+Passenger Michael McKay joined queue
+Passenger Jerry Swartz joined queue
+Desk2: Currently checking in Eilidh Hughes
+Desk2: Finished checking in Eilidh Hughes, required £25.0 luggage fee
+Desk1: Currently checking in Louise Cassidy
+Desk1: Finished checking in Louise Cassidy, required £50.0 luggage fee
+Passenger Jamie Cassidy joined queue
+Passenger Jamie Hughes joined queue
+Desk2: Currently checking in Tatiana Marshall
+Desk2: Finished checking in Tatiana Marshall, required £25.0 luggage fee
+Desk1: Currently checking in Hermione Tonyoli
+Desk1: Finished checking in Hermione Tonyoli, required £25.0 luggage fee
+Passenger Louise Feasby joined queue
+Desk2: Currently checking in Louise Tonyoli
+Desk2: Finished checking in Louise Tonyoli, required £50.0 luggage fee
+Passenger Elizabeth Marshall joined queue
+Desk1: Currently checking in Tatiana Gorse
+Desk1: Finished checking in Tatiana Gorse, required £25.0 luggage fee
+Passenger Ryan Swartz joined queue
+Passenger Herman Hogg joined queue
+Desk2: Currently checking in Ryan Hughes
+Desk2: Finished checking in Ryan Hughes, required £25.0 luggage fee
+Desk1: Currently checking in Herbert Swartz
+Desk1: Finished checking in Herbert Swartz, required £25.0 luggage fee
+Passenger Chloe Marshall joined queue
+Passenger Chloe Hughes joined queue
+Desk2: Currently checking in Elizabeth Hughes
+Desk2: Finished checking in Elizabeth Hughes, required £25.0 luggage fee
+Desk1: Currently checking in Hermione Gorse
+Desk1: Finished checking in Hermione Gorse, required £25.0 luggage fee
+Passenger Jamie Hogg joined queue
+Passenger Herman Edwards joined queue
+Desk2: Currently checking in Chloe Cassidy
+Desk2: Finished checking in Chloe Cassidy, required £25.0 luggage fee
+Desk1: Currently checking in Eilidh Gorse
+Desk1: Finished checking in Eilidh Gorse, required £25.0 luggage fee
+Passenger Hermione Tonyoli joined queue
+Passenger Bruno Tonyoli joined queue
+Passenger Chloe Cassidy joined queue
+Passenger Tatiana Tonyoli joined queue
+Desk2: Currently checking in Herman Marshall
+Desk2: Finished checking in Herman Marshall, required £25.0 luggage fee
+Desk1: Currently checking in Tatiana Hogg
+Desk1: Finished checking in Tatiana Hogg, required £25.0 luggage fee
+Passenger Jamie Hogg joined queue
+Passenger Bruno Marshall joined queue
+Desk2: Currently checking in Michael Tonyoli
+Desk2: Finished checking in Michael Tonyoli, required £25.0 luggage fee
+Desk1: Currently checking in Hermione Marshall
+Desk1: Finished checking in Hermione Marshall, required £25.0 luggage fee
+Passenger Chloe Tonyoli joined queue
+Desk2: Currently checking in Herbert Feasby
+Desk2: Finished checking in Herbert Feasby, required £25.0 luggage fee
+Passenger Jerry McKay joined queue
+Desk1: Currently checking in Michael McKay
+Desk1: Finished checking in Michael McKay, required £0.0 luggage fee
+Passenger Ryan Edwards joined queue
+Passenger Hermione Tonyoli joined queue
+Desk2: Currently checking in Jerry Swartz
+Desk2: Finished checking in Jerry Swartz, required £25.0 luggage fee
+Desk1: Currently checking in Jamie Cassidy
+Desk1: Finished checking in Jamie Cassidy, required £0.0 luggage fee
+Passenger Herman Hughes joined queue
+Desk2: Currently checking in Jamie Hughes
+Desk2: Finished checking in Jamie Hughes, required £0.0 luggage fee
+Passenger Eilidh Hogg joined queue
+Desk1: Currently checking in Louise Feasby
+Desk1: Finished checking in Louise Feasby, required £0.0 luggage fee
+Passenger Bruno McKay joined queue
+Desk2: Currently checking in Elizabeth Marshall
+Desk2: Finished checking in Elizabeth Marshall, required £25.0 luggage fee
+Desk1: Currently checking in Ryan Swartz
+Desk1: Finished checking in Ryan Swartz, required £50.0 luggage fee
+Passenger Eilidh Swartz joined queue
+Passenger Tatiana Feasby joined queue
+Desk2: Currently checking in Herman Hogg
+Desk2: Finished checking in Herman Hogg, required £0.0 luggage fee
+Desk1: Currently checking in Chloe Marshall
+Desk1: Finished checking in Chloe Marshall, required £0.0 luggage fee
+Passenger Louise Gorse joined queue
+Passenger Jamie Swartz joined queue
+Desk2: Currently checking in Chloe Hughes
+Desk2: Finished checking in Chloe Hughes, required £25.0 luggage fee
+Desk1: Currently checking in Jamie Cassidy
+Desk1: Finished checking in Jamie Cassidy, required £25.0 luggage fee
+Passenger Hermione Edwards joined queue
+Passenger Hermione Hughes joined queue
+Desk2: Currently checking in Jamie Hogg
+Desk2: Finished checking in Jamie Hogg, required £0.0 luggage fee
+Desk1: Currently checking in Herman Edwards
+Desk1: Finished checking in Herman Edwards, required £25.0 luggage fee
+Passenger Herman Tonyoli joined queue
+Passenger Hermione Hughes joined queue
+Desk2: Currently checking in Hermione Tonyoli
+Desk2: Finished checking in Hermione Tonyoli, required £0.0 luggage fee
+Desk1: Currently checking in Bruno Tonyoli
+Desk1: Finished checking in Bruno Tonyoli, required £50.0 luggage fee
+Passenger Chloe Edwards joined queue
+Desk2: Currently checking in Chloe Cassidy
+Desk2: Finished checking in Chloe Cassidy, required £0.0 luggage fee
+Desk1: Currently checking in Tatiana Tonyoli
+Desk1: Finished checking in Tatiana Tonyoli, required £25.0 luggage fee
+Passenger Elizabeth Gorse joined queue
+Passenger Eilidh Hogg joined queue
+Passenger Hermione Reilly joined queue
+Desk2: Currently checking in Jamie Hogg
+Desk2: Finished checking in Jamie Hogg, required £0.0 luggage fee
+Desk1: Currently checking in Bruno Marshall
+Desk1: Finished checking in Bruno Marshall, required £50.0 luggage fee
+Passenger Herman Swartz joined queue
+Desk2: Currently checking in Chloe Tonyoli
+Desk2: Finished checking in Chloe Tonyoli, required £0.0 luggage fee
+Desk1: Currently checking in Jerry McKay
+Desk1: Finished checking in Jerry McKay, required £0.0 luggage fee
+Passenger Eilidh McKay joined queue
+Passenger Tatiana Marshall joined queue
+Desk2: Currently checking in Ryan Edwards
+Desk2: Finished checking in Ryan Edwards, required £0.0 luggage fee
+Desk1: Currently checking in Hermione Tonyoli
+Desk1: Finished checking in Hermione Tonyoli, required £50.0 luggage fee
+Passenger Louise Gorse joined queue
+Desk2: Currently checking in Herman Hughes
+Desk2: Finished checking in Herman Hughes, required £0.0 luggage fee
+Desk1: Currently checking in Eilidh Hogg
+Desk1: Finished checking in Eilidh Hogg, required £25.0 luggage fee
+Passenger Louise Cassidy joined queue
+Passenger Eilidh Feasby joined queue
+Desk2: Currently checking in Bruno McKay
+Desk2: Finished checking in Bruno McKay, required £25.0 luggage fee
+Desk1: Currently checking in Eilidh Swartz
+Desk1: Finished checking in Eilidh Swartz, required £25.0 luggage fee
+Passenger Herman Hogg joined queue
+Desk2: Currently checking in Tatiana Feasby
+Desk2: Finished checking in Tatiana Feasby, required £50.0 luggage fee
+Desk1: Currently checking in Eilidh McKay
+Desk1: Finished checking in Eilidh McKay, required £25.0 luggage fee
+Passenger Herman Cassidy joined queue
+Desk2: Currently checking in Louise Gorse
+Desk2: Finished checking in Louise Gorse, required £0.0 luggage fee
+Desk1: Currently checking in Jamie Swartz
+Desk1: Finished checking in Jamie Swartz, required £25.0 luggage fee
+Passenger Tatiana Hughes joined queue
+Passenger Louise Edwards joined queue
+Desk2: Currently checking in Hermione Edwards
+Desk2: Finished checking in Hermione Edwards, required £50.0 luggage fee
+Desk1: Currently checking in Hermione Hughes
+Desk1: Finished checking in Hermione Hughes, required £0.0 luggage fee
+Passenger Louise Reilly joined queue
+Passenger Eilidh Swartz joined queue
+Desk2: Currently checking in Herman Tonyoli
+Desk2: Finished checking in Herman Tonyoli, required £0.0 luggage fee
+Desk1: Currently checking in Hermione Hughes
+Desk1: Finished checking in Hermione Hughes, required £0.0 luggage fee
+Passenger Elizabeth Tonyoli joined queue
+Passenger Theodore Swartz joined queue
+Desk2: Currently checking in Chloe Edwards
+Desk2: Finished checking in Chloe Edwards, required £25.0 luggage fee
+Desk1: Currently checking in Elizabeth Gorse
+Desk1: Finished checking in Elizabeth Gorse, required £25.0 luggage fee
+Passenger Tatiana Tonyoli joined queue
+Desk2: Currently checking in Eilidh Hogg
+Desk2: Finished checking in Eilidh Hogg, required £0.0 luggage fee
+Passenger Chloe Feasby joined queue
+Desk1: Currently checking in Hermione Reilly
+Desk1: Finished checking in Hermione Reilly, required £0.0 luggage fee
+Passenger Ryan Swartz joined queue
+Desk2: Currently checking in Herman Swartz
+Desk2: Finished checking in Herman Swartz, required £25.0 luggage fee
+Desk1: Currently checking in Eilidh McKay
+Desk1: Finished checking in Eilidh McKay, required £25.0 luggage fee
+Passenger Jerry Marshall joined queue
+Passenger Hermione Reilly joined queue
+Desk2: Currently checking in Tatiana Marshall
+Desk2: Finished checking in Tatiana Marshall, required £0.0 luggage fee
+Desk1: Currently checking in Louise Gorse
+Desk1: Finished checking in Louise Gorse, required £50.0 luggage fee
+Passenger Theodore Hogg joined queue
+Desk2: Currently checking in Louise Cassidy
+Desk2: Finished checking in Louise Cassidy, required £25.0 luggage fee
+Passenger Bruno Edwards joined queue
+Desk1: Currently checking in Eilidh Feasby
+Desk1: Finished checking in Eilidh Feasby, required £25.0 luggage fee
+Passenger Herman Gorse joined queue
+Passenger Herman Edwards joined queue
+Desk2: Currently checking in Herman Hogg
+Desk2: Finished checking in Herman Hogg, required £25.0 luggage fee
+Desk1: Currently checking in Herman Cassidy
+Desk1: Finished checking in Herman Cassidy, required £0.0 luggage fee
+Passenger Eilidh Swartz joined queue
+Desk2: Currently checking in Tatiana Hughes
+Desk2: Finished checking in Tatiana Hughes, required £25.0 luggage fee
+Passenger Michael Tonyoli joined queue
+Desk1: Currently checking in Louise Edwards
+Desk1: Finished checking in Louise Edwards, required £25.0 luggage fee
+Desk2: Currently checking in Louise Reilly
+Desk2: Finished checking in Louise Reilly, required £0.0 luggage fee
+Passenger Jerry Feasby joined queue
+Desk1: Currently checking in Eilidh Swartz
+Desk1: Finished checking in Eilidh Swartz, required £25.0 luggage fee
+Passenger Hermione Reilly joined queue
+Desk2: Currently checking in Elizabeth Tonyoli
+Desk2: Finished checking in Elizabeth Tonyoli, required £50.0 luggage fee
+Desk1: Currently checking in Theodore Swartz
+Desk1: Finished checking in Theodore Swartz, required £0.0 luggage fee
+Passenger Theodore Marshall joined queue
+Passenger Chloe Reilly joined queue
+Desk2: Currently checking in Tatiana Tonyoli
+Desk2: Finished checking in Tatiana Tonyoli, required £25.0 luggage fee
+Passenger Herman Hughes joined queue
+Desk1: Currently checking in Chloe Feasby
+Desk1: Finished checking in Chloe Feasby, required £25.0 luggage fee
+Desk2: Currently checking in Ryan Swartz
+Desk2: Finished checking in Ryan Swartz, required £25.0 luggage fee
+Passenger Louise Hogg joined queue
+Desk1: Currently checking in Jerry Marshall
+Desk1: Finished checking in Jerry Marshall, required £25.0 luggage fee
+Passenger Eilidh Cassidy joined queue
+Passenger Elizabeth Gorse joined queue
+Desk2: Currently checking in Hermione Reilly
+Desk2: Finished checking in Hermione Reilly, required £0.0 luggage fee
+Desk1: Currently checking in Theodore Hogg
+Desk1: Finished checking in Theodore Hogg, required £50.0 luggage fee
+Passenger Herbert Edwards joined queue
+Desk2: Currently checking in Bruno Edwards
+Desk2: Finished checking in Bruno Edwards, required £25.0 luggage fee
+Desk1: Currently checking in Herman Gorse
+Desk1: Finished checking in Herman Gorse, required £0.0 luggage fee
+Passenger Bruno Swartz joined queue
+Desk2: Currently checking in Herman Edwards
+Desk2: Finished checking in Herman Edwards, required £0.0 luggage fee
+Desk1: Currently checking in Eilidh Swartz
+Desk1: Finished checking in Eilidh Swartz, required £25.0 luggage fee
+Passenger Herbert Tonyoli joined queue
+Desk2: Currently checking in Michael Tonyoli
+Desk2: Finished checking in Michael Tonyoli, required £50.0 luggage fee
+Passenger Herman Hughes joined queue
+Desk1: Currently checking in Jerry Feasby
+Desk1: Finished checking in Jerry Feasby, required £50.0 luggage fee
+Passenger Elizabeth Cassidy joined queue
+Desk2: Currently checking in Hermione Reilly
+Desk2: Finished checking in Hermione Reilly, required £0.0 luggage fee
+Desk1: Currently checking in Theodore Marshall
+Desk1: Finished checking in Theodore Marshall, required £0.0 luggage fee
+Passenger Bruno Feasby joined queue
+Desk2: Currently checking in Chloe Reilly
+Desk2: Finished checking in Chloe Reilly, required £25.0 luggage fee
+Passenger Chloe Gorse joined queue
+Desk1: Currently checking in Herman Hughes
+Desk1: Finished checking in Herman Hughes, required £50.0 luggage fee
+Passenger Hermione Reilly joined queue
+Passenger Michael Reilly joined queue
+Passenger Elizabeth Reilly joined queue
+Desk2: Currently checking in Louise Hogg
+Desk2: Finished checking in Louise Hogg, required £50.0 luggage fee
+Passenger Jamie Gorse joined queue
+Desk1: Currently checking in Eilidh Cassidy
+Desk1: Finished checking in Eilidh Cassidy, required £0.0 luggage fee
+Passenger Louise Marshall joined queue
+Desk2: Currently checking in Elizabeth Gorse
+Desk2: Finished checking in Elizabeth Gorse, required £50.0 luggage fee
+Passenger Elizabeth Cassidy joined queue
+Desk1: Currently checking in Eilidh Hughes
+Desk1: Finished checking in Eilidh Hughes, required £0.0 luggage fee
+Passenger Herman Edwards joined queue
+Passenger Tatiana Hogg joined queue
+Desk2: Currently checking in Herbert Edwards
+Desk2: Finished checking in Herbert Edwards, required £0.0 luggage fee
+Desk1: Currently checking in Bruno Swartz
+Desk1: Finished checking in Bruno Swartz, required £25.0 luggage fee
+Passenger Elizabeth Reilly joined queue
+Passenger Elizabeth Hughes joined queue
+Desk2: Currently checking in Herbert Tonyoli
+Desk2: Finished checking in Herbert Tonyoli, required £0.0 luggage fee
+Passenger Tatiana Hogg joined queue
+Desk1: Currently checking in Herman Hughes
+Desk1: Finished checking in Herman Hughes, required £50.0 luggage fee
+Passenger Elizabeth Marshall joined queue
+Desk2: Currently checking in Elizabeth Cassidy
+Desk2: Finished checking in Elizabeth Cassidy, required £25.0 luggage fee
+Passenger Elizabeth McKay joined queue
+Desk1: Currently checking in Bruno Feasby
+Desk1: Finished checking in Bruno Feasby, required £0.0 luggage fee
+Passenger Michael McKay joined queue
+Passenger Tatiana Reilly joined queue
+Desk2: Currently checking in Chloe Gorse
+Desk2: Finished checking in Chloe Gorse, required £0.0 luggage fee
+Passenger Herman Edwards joined queue
+Desk1: Currently checking in Hermione Reilly
+Desk1: Finished checking in Hermione Reilly, required £0.0 luggage fee
+Passenger Tatiana Hughes joined queue
+Passenger Hermione Hughes joined queue
+Passenger Elizabeth McKay joined queue
+Passenger Herbert Tonyoli joined queue
+Desk2: Finished checking in Michael Reilly, required £25.0 luggage fee
+Desk1: Currently checking in Elizabeth Reilly
+Desk1: Finished checking in Elizabeth Reilly, required £25.0 luggage fee
+Passenger Louise Tonyoli joined queue
+Passenger Ryan Reilly joined queue
+Desk2: Currently checking in Jamie Gorse
+Desk2: Finished checking in Jamie Gorse, required £25.0 luggage fee
+Desk1: Currently checking in Louise Marshall
+Desk1: Finished checking in Louise Marshall, required £50.0 luggage fee
+Passenger Michael Reilly joined queue
+Desk2: Currently checking in Elizabeth Cassidy
+Desk2: Finished checking in Elizabeth Cassidy, required £25.0 luggage fee
+Desk1: Currently checking in Herman Edwards
+Desk1: Finished checking in Herman Edwards, required £50.0 luggage fee
+Passenger Tatiana Tonyoli joined queue
+Passenger Eilidh Hughes joined queue
+Desk2: Currently checking in Tatiana Hogg
+Desk2: Finished checking in Tatiana Hogg, required £25.0 luggage fee
+Passenger Bruno Hogg joined queue
+Desk1: Currently checking in Elizabeth Reilly
+Desk1: Finished checking in Elizabeth Reilly, required £0.0 luggage fee
+Passenger Herbert Gorse joined queue
+Desk2: Currently checking in Elizabeth Hughes
+Desk2: Finished checking in Elizabeth Hughes, required £0.0 luggage fee
+Passenger Herbert Feasby joined queue
+Desk1: Currently checking in Tatiana Hogg
+Desk1: Finished checking in Tatiana Hogg, required £25.0 luggage fee
+Passenger Elizabeth Hughes joined queue
+Passenger Herbert Hogg joined queue
+Desk2: Currently checking in Elizabeth Marshall
+Desk2: Finished checking in Elizabeth Marshall, required £0.0 luggage fee
+Passenger Chloe Tonyoli joined queue
+Desk1: Currently checking in Elizabeth McKay
+Desk1: Finished checking in Elizabeth McKay, required £25.0 luggage fee
+Passenger Jamie Reilly joined queue
+Desk2: Currently checking in Michael McKay
+Desk2: Finished checking in Michael McKay, required £50.0 luggage fee
+Desk1: Currently checking in Tatiana Reilly
+Desk1: Finished checking in Tatiana Reilly, required £25.0 luggage fee
+Passenger Herbert Reilly joined queue
+Desk2: Currently checking in Herman Edwards
+Desk2: Finished checking in Herman Edwards, required £25.0 luggage fee
+Passenger Chloe Hogg joined queue
+Desk1: Currently checking in Tatiana Hughes
+Desk1: Finished checking in Tatiana Hughes, required £25.0 luggage fee
+Passenger Theodore McKay joined queue
+Desk2: Currently checking in Hermione Hughes
+Desk2: Finished checking in Hermione Hughes, required £0.0 luggage fee
+Desk1: Currently checking in Elizabeth McKay
+Desk1: Finished checking in Elizabeth McKay, required £25.0 luggage fee
+Passenger Jerry Feasby joined queue
+Desk2: Currently checking in Herbert Tonyoli
+Desk2: Finished checking in Herbert Tonyoli, required £0.0 luggage fee
+Desk1: Currently checking in Louise Tonyoli
+Desk1: Finished checking in Louise Tonyoli, required £25.0 luggage fee
+Passenger Herbert Gorse joined queue
+Desk2: Currently checking in Ryan Reilly
+Desk2: Finished checking in Ryan Reilly, required £0.0 luggage fee
+Desk1: Currently checking in Michael Reilly
+Desk1: Finished checking in Michael Reilly, required £0.0 luggage fee
+Passenger Hermione Hogg joined queue
+Passenger Ryan Marshall joined queue
+Desk2: Currently checking in Tatiana Tonyoli
+Desk2: Finished checking in Tatiana Tonyoli, required £0.0 luggage fee
+Desk1: Currently checking in Eilidh Hughes
+Desk1: Finished checking in Eilidh Hughes, required £25.0 luggage fee
+Passenger Eilidh Reilly joined queue
+Passenger Eilidh Cassidy joined queue
+Desk2: Currently checking in Bruno Hogg
+Desk2: Finished checking in Bruno Hogg, required £25.0 luggage fee
+Desk1: Currently checking in Herbert Gorse
+Desk1: Finished checking in Herbert Gorse, required £0.0 luggage fee
+Passenger Herbert Cassidy joined queue
+Desk2: Currently checking in Herbert Feasby
+Desk2: Finished checking in Herbert Feasby, required £0.0 luggage fee
+Desk1: Currently checking in Elizabeth Hughes
+Desk1: Finished checking in Elizabeth Hughes, required £25.0 luggage fee
+Time up, all desks closed
+Generating report.
+Passenger Herbert McKay joined queue
+Passenger Tatiana Tonyoli joined queue
+Desk2: Currently checking in Herbert Hogg
+Desk2: Finished checking in Herbert Hogg, required £0.0 luggage fee
+Desk1: Currently checking in Chloe Tonyoli
