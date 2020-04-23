@@ -61,6 +61,7 @@ public class CheckInDesk extends Thread {
             System.out.println(id + " closed.");
             try {
                 Thread.sleep(1000);
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

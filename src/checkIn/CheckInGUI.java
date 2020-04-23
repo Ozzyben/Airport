@@ -15,8 +15,8 @@ public class CheckInGUI {
 
 	// alterable width and height of the window. all components are scaled to width
 		// and height
-		int width = 500;
-		int height = 300;
+		int width = 600;
+		int height = 400;
 		
 		JFrame frame;
 		
@@ -77,11 +77,13 @@ public class CheckInGUI {
 		}
 		
 		public void displayDesks(){
-			Iterator<CheckInDesk> iterator = airport.desks.iterator();
+			List<CheckInDesk> desks_holder = airport.desks;
+			Iterator<CheckInDesk> iterator = desks_holder.iterator();
 			int totalDesks = airport.desks.size();
 			while (iterator.hasNext()){
 				createDeskDisplay(iterator.next(), totalDesks);
 			}
+			desksHolder.setVisible(true);
 			frame.add(desksHolder);
 		}
 
@@ -106,7 +108,7 @@ public class CheckInGUI {
 			Desks.setBounds((desksWidth*desk.deskNumber) - desksWidth, height/3, desksWidth, desksHeight);
 			
 			Desks.setText(airport.desks.get(0).currentPassenger.getLastName()+" is dropping off 1 bag of "+
-			airport.desks.get(0).currentPassenger.totalWeight()+". A baggage fee of "+desk.currentPassenger.bagCost()+" is due.");
+			airport.desks.get(0).currentPassenger.totalWeight()+". \nA baggage fee of "+desk.currentPassenger.bagCost()+" is due.");
 			
 			Desks.setVisible(true);
 			desksHolder.add(Desks);
@@ -119,6 +121,7 @@ public class CheckInGUI {
 			displayFlights();
 			displayDesks();
 			
+			//frame.revalidate();
 			frame.repaint();
 			
 		}
